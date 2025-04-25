@@ -1,0 +1,266 @@
+/* HeroBanner.css - Enhanced to match HTML version 100% */
+
+/* Banner section styles */
+.banner.banner--style1 {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.banner__bg-element img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Banner content styles */
+.banner__content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner__content-coin {
+  margin-bottom: 20px;
+}
+
+.banner__content-coin img {
+  max-width: 60px;
+}
+
+.banner__content-heading {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--title-color);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.banner__content-heading span {
+  color: var(--secondary-color);
+}
+
+/* Using the main theme's gradient text class */
+.banner__content-heading span.gradient-text--brand1 {
+  /* This class is defined in the main theme CSS */
+  font-weight: 700;
+}
+
+.banner__content-moto {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-bottom: 30px;
+}
+
+/* Button styles */
+.banner__btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.trk-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.trk-btn--primary {
+  background-color: var(--brand-color);
+  color: #fff;
+  border: none;
+}
+
+.trk-btn--primary:hover {
+  background-color: var(--secondary-color);
+}
+
+.trk-btn--arrow span {
+  margin-left: 8px;
+}
+
+.trk-btn--outline22 {
+  background-color: transparent;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.trk-btn--outline22:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.trk-btn--outline22 .style1 {
+  display: inline-flex;
+  margin-right: 8px;
+}
+
+/* Stats section - matching the HTML version exactly */
+.banner__content-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+/* Social section */
+.banner__content-social {
+  margin-top: 30px;
+}
+
+.banner__content-social p {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.social {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-white);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+}
+
+/* Using the main theme's social link styles */
+.social__link:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+}
+
+.social__link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Banner thumb */
+.banner__thumb {
+  text-align: center;
+}
+
+.banner__thumb img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Banner shape */
+.banner__shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.banner__shape-item {
+  position: absolute;
+}
+
+.banner__shape-item--1 {
+  top: 20%;
+  right: 10%;
+  animation: floating 3s infinite alternate;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .banner__content-heading {
+    font-size: 36px;
+  }
+  
+  .banner__content-stats {
+    gap: 15px;
+  }
+  
+  .banner__content-stats > div {
+    padding: 10px 8px;
+  }
+  
+  .banner__content-stats h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 60px 0;
+  }
+  
+  .banner__content-heading {
+    font-size: 30px;
+  }
+  
+  .banner__thumb {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .banner__content-heading {
+    font-size: 24px;
+  }
+  
+  .banner__btn-group {
+    flex-direction: column;
+  }
+  
+  .banner__content-stats {
+    gap: 10px;
+  }
+  
+  .banner__content-stats > div {
+    padding: 8px 6px;
+  }
+  
+  .banner__content-stats h2 {
+    font-size: 24px;
+  }
+  
+  .social {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,74 @@
+:root {
+  --brand-color: #00D094;
+  --secondary-color: #0A4FD5;
+  --body-bg: #ffffff;
+  --text-color: #504C89;
+  --dark-bg: #121212;
+  --header-height: 80px;
+}
+
+[data-theme='dark'] {
+  --body-bg: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-bg);
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Utility Classes */
+.d-lg-none {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .d-lg-none {
+    display: block;
+  }
+}
+
+/* Animation Classes */
+.header-fixed {
+  animation: headerSlideDown 0.5s ease;
+}
+
+@keyframes headerSlideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--brand-color);
+  color: white;
+  padding: 8px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Add any custom styles below */

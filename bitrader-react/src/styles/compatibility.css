@@ -1,0 +1,94 @@
+/* Vendor prefixes and compatibility fixes */
+
+/* Base fixes for transform properties */
+.transform-fix {
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Animation compatibility */
+@-webkit-keyframes floating {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+@-moz-keyframes floating {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+@-o-keyframes floating {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-15px); }
+}
+
+/* Fix for banner style 5 background */
+.banner--style5::after {
+  background-image: url('../assets/img/uploads/2025/02/bg-1.png');
+}
+
+/* Transition compatibility */
+.transition-fix {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* Animation compatibility classes */
+.floating-animation {
+  -webkit-animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -moz-animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -ms-animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  -o-animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+/* Flex compatibility */
+.flex-fix {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Banner stats compatibility */
+.banner__content-stats {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.banner__content-stats > div {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.banner__content-stats > div:hover {
+  -webkit-transform: translateY(-5px);
+  -moz-transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  -o-transform: translateY(-5px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Gradient text effects */
+.gradient-text--brand1 {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--brand-color); /* Fallback */
+  font-weight: 700;
+}
