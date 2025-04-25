@@ -141,7 +141,7 @@
   margin: 0;
 }
 
-.social__link {
+.social_link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -156,12 +156,12 @@
 }
 
 /* Using the main theme's social link styles */
-.social__link:hover {
+.social_link:hover {
   background-color: var(--brand-color);
   color: #fff;
 }
 
-.social__link svg {
+.social_link svg {
   width: 18px;
   height: 18px;
 }
@@ -187,11 +187,11 @@
   pointer-events: none;
 }
 
-.banner__shape-item {
+.banner_shape-item {
   position: absolute;
 }
 
-.banner__shape-item--1 {
+.banner_shape-item--1 {
   top: 20%;
   right: 10%;
   animation: floating 3s infinite alternate;
