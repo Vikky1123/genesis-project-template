@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
+import '../../assets/css/bitrader-cored1c0.css';
+import '../../assets/css/elementor/frontend.min87cc.css';
 
 const FeatureTabs = () => {
   useEffect(() => {
@@ -106,7 +108,7 @@ const FeatureTabs = () => {
                           />
 
                           <div className="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
-                            <div className="floating-content_item floating-content_item--style2 text-center">
+                            <div className="floating-content__item floating-content__item--style2 text-center">
                               <img 
                                 decoding="async" 
                                 src={`${process.env.PUBLIC_URL}/wp-content/uploads/2023/10/${tab.percentImg}`}
@@ -118,7 +120,7 @@ const FeatureTabs = () => {
                           </div>
 
                           <div className="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
-                            <div className="floating-content_item floating-content_item--style3 d-flex align-items-center">
+                            <div className="floating-content__item floating-content__item--style3 d-flex align-items-center">
                               <h3 className="style2">{tab.stat}</h3>
                               <p className="ms-3 style2">{tab.desc}</p>
                             </div>
