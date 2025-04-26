@@ -1,4 +1,3 @@
-
 import { useEffect } from 'react';
 import AOS from 'aos';
 
@@ -106,7 +105,7 @@ const FeatureTabs = () => {
                             alt="Feature image" 
                           />
 
-                          <div className="floating-content_top-right floating-content_top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                          <div className="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
                             <div className="floating-content_item floating-content_item--style2 text-center">
                               <img 
                                 decoding="async" 
@@ -118,7 +117,7 @@ const FeatureTabs = () => {
                             </div>
                           </div>
 
-                          <div className="floating-content_bottom-left floating-content_bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                          <div className="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
                             <div className="floating-content_item floating-content_item--style3 d-flex align-items-center">
                               <h3 className="style2">{tab.stat}</h3>
                               <p className="ms-3 style2">{tab.desc}</p>
