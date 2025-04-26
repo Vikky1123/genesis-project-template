@@ -1,43 +1,36 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
-import { preloadThemeAssets } from '../utils/preloadAssets';
+
+import React, { createContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
-export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('bitrader-theme-mode') || 'light';
-  });
-  const [isLoading, setIsLoading] = useState(true);
+const ThemeProvider = ({ children }) => {
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    const initializeTheme = async () => {
-      try {
-        await preloadThemeAssets();
-        document.documentElement.setAttribute('data-bs-theme', theme);
-        localStorage.setItem('bitrader-theme-mode', theme);
-      } catch (error) {
-        console.error('Failed to preload theme assets:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    initializeTheme();
-  }, [theme]);
+    // Check local storage for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setDarkMode(true);
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    setDarkMode(!darkMode);
+    if (!darkMode) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
   };
 
-  if (isLoading) {
-    return null; // Or return a loading spinner
-  }
-
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ darkMode, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-export const useTheme = () => useContext(ThemeContext);
+export { ThemeContext, ThemeProvider };
