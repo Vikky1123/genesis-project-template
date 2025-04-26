@@ -23,6 +23,10 @@
     "eject": "react-scripts eject",
     "copy-assets": "node copy-assets.js",
     "prebuild": "npm run copy-assets"
+    "dev": "vite",
+    "build:vite": "vite build",
+    "build:dev": "vite build --mode development",
+    "preview": "vite preview"
   },
   "eslintConfig": {
     "extends": [
