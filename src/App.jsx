@@ -4,7 +4,7 @@ import ErrorBoundary from './components/ErrorBoundary.jsx';
 import Header from './components/Header';
 import MainSection from './components/MainSection/MainSection';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext.js';
 
 // Import CSS files
 import './assets/css/bitrader-cored1c0.css';
