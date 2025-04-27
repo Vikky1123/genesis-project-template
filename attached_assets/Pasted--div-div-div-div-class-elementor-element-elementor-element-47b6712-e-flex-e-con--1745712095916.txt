@@ -1,0 +1,238 @@
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
+				<div class="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image" data-id="8a79fe6" data-element_type="widget" data-widget_type="genix-image.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        
+                            <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about__thumb-inner">
+                        <div class="about__thumb-image floating-content">
+                                                            <img decoding="async" src="./wp-content/uploads/2023/10/about01-2.png" alt="">
+                            
+                                                            <div class="floating-content__top-left">
+                                    <div class="floating-content__item">
+                                        <h3>50+</h3>
+                                        <p>Global Partners</p>
+                                    </div>
+                                </div>
+                            
+                                                            <div class="floating-content__bottom-right">
+                                    <div class="floating-content__item">
+                                        <h3>30+</h3>
+                                        <p>Countries Served</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child" data-id="f496e11" data-element_type="container">
+				<div class="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading" data-id="2a404d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our <span style="color: var(--secondary-color);">Strategic Partners</span> & Global Network</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading" data-id="77c0134" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn" data-id="211649c" data-element_type="widget" data-widget_type="tg-btn.default">
+				<div class="elementor-widget-container">
+					
+        
+                            <div class="myclass1">     
+                    <a href="about-us/index.html" target="_self" rel="nofollow" class="trk-btn trk-btn--border trk-btn--primary">
+                        View Partners                    </a>
+                </div>
+            
+        
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c1c4aaf e-con-full e-flex e-con e-parent" data-id="c1c4aaf" data-element_type="container">
+				<div class="elementor-element elementor-element-94c7ebe elementor-widget elementor-widget-offer-tab" data-id="94c7ebe" data-element_type="widget" data-widget_type="offer-tab.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        <section class="feature feature--style1 padding-bottom padding-top bg-color">
+            <div class="container">
+                <div class="feature__wrapper">
+                    <div class="row g-5 align-items-center justify-content-between">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="feature__content" data-aos="fade-right" data-aos-duration="800">
+                                <div class="feature__content-inner">
+
+                                    <div class="section-header">
+                                                                                    <h2 class="mb-15 mt-minus-5 el-section-title"><span style="color: var(--secondary-color)">Platform </span> Statistics</h2>
+                                        
+                                                                                    <p class="mb-0 el-section-description">Explore our impressive performance metrics that make Bitrader a leading choice for traders worldwide.</p>
+                                                                            </div>
+
+                                    <div class="feature__nav">
+                                        <div class="nav nav--feature flex-column nav-pills" id="feat-pills-tab" role="tablist" aria-orientation="vertical">
+                                                                                            <div class="nav-link active" id="tg-tab-0" data-bs-toggle="pill" data-bs-target="#tg-id-0" role="tab" aria-controls="tg-id-0" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Consistently high success rate across all trading pairs</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-1" data-bs-toggle="pill" data-bs-target="#tg-id-1" role="tab" aria-controls="tg-id-1" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Average daily volume with minimal transaction fees</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-2" data-bs-toggle="pill" data-bs-target="#tg-id-2" role="tab" aria-controls="tg-id-2" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Growing user base with exceptional retention rates</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-3" data-bs-toggle="pill" data-bs-target="#tg-id-3" role="tab" aria-controls="tg-id-3" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Ultra-fast transaction processing with advanced security</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="feature__thumb pt-5 pt-md-0" data-aos="fade-left" data-aos-duration="800">
+                                <div class="feature__thumb-inner">
+                                    <div class="tab-content" id="feat-pills-tabContent">
+                                                                                    <div class="tab-pane fade show active" id="tg-id-0" role="tabpanel" aria-labelledby="tg-tab-0" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features01.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content_top-right floating-content_top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent01.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Success Rate</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content_bottom-left floating-content_bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">89%</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Trading Success</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-1" role="tabpanel" aria-labelledby="tg-tab-1" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features02.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content_top-right floating-content_top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent02.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Daily Volume</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content_bottom-left floating-content_bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">$18M</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Trading Volume</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-2" role="tabpanel" aria-labelledby="tg-tab-2" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features01.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content_top-right floating-content_top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent03.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">User Growth</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content_bottom-left floating-content_bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">30K+</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Active Users</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-3" role="tabpanel" aria-labelledby="tg-tab-3" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features02.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content_top-right floating-content_top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent04.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Transaction Speed</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content_bottom-left floating-content_bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content_item floating-content_item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">0.02s</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Processing Time</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature__shape">
+
+                                    <span class="feature_shape-item feature_shape-item--1">
+                        <img decoding="async" src="./wp-content/uploads/2023/10/features_shape.png" width="70" alt="shape-icon">
+                    </span>
+                                <span class="feature_shape-item feature_shape-item--2"> <span></span> </span>
+            </div>
+        </section>
