@@ -10,6 +10,9 @@ export default defineConfig({
     hmr: {
       clientPort: 443
     },
-    allowedHosts: 'all'
+    allowedHosts: 'all',
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
   }
 })
