@@ -1,9 +1,9 @@
 
 /* Import core styles */
-@import '../PROJECT BITRADER/bitrader.thetork.com/wp-content/themes/bitrader/assets/css/bitrader-cored1c0.css';
-@import '../PROJECT BITRADER/bitrader.thetork.com/wp-content/themes/bitrader/assets/css/bootstrap.mind1c0.css';
-@import '../PROJECT BITRADER/bitrader.thetork.com/wp-content/themes/bitrader/assets/css/hfe-style.css';
-@import '../PROJECT BITRADER/bitrader.thetork.com/wp-content/themes/bitrader/assets/css/hfe-widgets-style.css';
+@import './assets/css/bitrader-cored1c0.css';
+@import './assets/css/bootstrap.mind1c0.css';
+@import './assets/css/hfe-style.css';
+@import './assets/css/hfe-widgets-style.css';
 
 /* Base styles */
 :root {
