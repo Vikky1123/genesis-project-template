@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import '../../assets/css/bitrader-cored1c0.css';
+import './HeroBanner.css';
 
 const HeroBanner = () => {
   useEffect(() => {

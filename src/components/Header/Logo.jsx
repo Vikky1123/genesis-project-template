@@ -4,15 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Logo = () => {
   return (
-    <div className="logo">
-      <Link className="main-logo" to="/">
-        <img 
-          id="main-logo" 
-          className="dark" 
-          src="/wp-content/uploads/2024/06/logo-3.png" 
-          style={{ maxHeight: "30px" }} 
-          alt="Logo" 
-        />
+    <div className="header__logo">
+      <Link to="/" className="header__logo-link">
+        <img src="/assets/img/uploads/2023/10/logo-dark-2.png" alt="Bitrader" className="header__logo-img dark" />
+        <span className="header__logo-text">Bitrader</span>
       </Link>
     </div>
   );

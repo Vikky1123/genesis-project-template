@@ -3,43 +3,47 @@ import React, { useState, useEffect } from 'react';
 
 const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
+  
   useEffect(() => {
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme-mode');
-    if (savedTheme === 'dark') {
-      setIsDarkMode(true);
-      document.body.classList.add('dark-mode');
+    // Check for saved theme preference or use user's system preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      setIsDarkMode(savedTheme === 'dark');
+      document.documentElement.setAttribute('data-bs-theme', savedTheme);
+    } else {
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      setIsDarkMode(prefersDark);
+      document.documentElement.setAttribute('data-bs-theme', prefersDark ? 'dark' : 'light');
     }
   }, []);
-
+  
   const toggleTheme = () => {
-    if (isDarkMode) {
-      document.body.classList.remove('dark-mode');
-      localStorage.setItem('theme-mode', 'light');
-      setIsDarkMode(false);
-    } else {
-      document.body.classList.add('dark-mode');
-      localStorage.setItem('theme-mode', 'dark');
-      setIsDarkMode(true);
-    }
+    const newTheme = isDarkMode ? 'light' : 'dark';
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.setAttribute('data-bs-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
   };
-
+  
   return (
-    <div className="lightdark-switch">
-      <span
-        className="switch-btn dark-btn"
-        id="btnSwitch"
-        onClick={toggleTheme}
-        style={{ backgroundColor: isDarkMode ? '#ffffff' : 'rgb(0, 208, 148)' }}
-      >
-        <img
-          src={isDarkMode ? "/assets/img/icons/sun.svg" : "/wp-content/themes/bitrader/assets/img/icons/moon.svg"}
-          alt="light-dark-switchbtn"
-          className="swtich-icon"
-        />
-      </span>
-    </div>
+    <button className="header__theme-switcher" onClick={toggleTheme}>
+      {isDarkMode ? (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+      ) : (
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      )}
+    </button>
   );
 };
 
