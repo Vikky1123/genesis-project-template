@@ -1,7 +1,10 @@
 
 /* Import core styles */
-@import './assets/css/bitrader-core.css';
-@import './assets/css/compatibility-fixes.css';
+@import './assets/css/bitrader-cored1c0.css';
+@import './assets/css/bitrader-customd1c0.css';
+@import './assets/css/bitrader-fontsd1c0.css';
+@import './assets/css/bootstrap.mind1c0.css';
+@import './assets/css/aosd1c0.css';
 
 /* Base styles */
 :root {
