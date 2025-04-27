@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0', 
-    port: 3000,
+    port: 5000,
     hmr: {
       clientPort: 443
     },
@@ -16,7 +16,7 @@ export default defineConfig({
     watch: {
       usePolling: true
     },
-    strictPort: false, // Changed to false to allow fallback to another port if 3000 is in use
+    strictPort: true,
     allowedHosts: [
       '5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev',
       '.replit.dev'
