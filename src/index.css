@@ -1,20 +1,35 @@
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 :root {
-  --brand-color: #0A4FD5;
-  --secondary-color: #2B4EFF;
-  --title-color: #172048;
-  --text-color: #6E6E8B;
-  --text-color-3: #9B9DAF;
-  --bg-white: #FFFFFF;
+  --brand-color: #00D094;
+  --secondary-color: #0A4FD5;
+  --header-bg-color: #ffffff;
+  --text-color: #0C263A;
+  --body-bg: #ffffff;
+  --black-color: #0C263A;
+  --bg-white: #ffffff;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--body-bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-html[data-bs-theme='dark'] {
-  --title-color: #FFFFFF;
-  --text-color: #9B9DAF;
-  --bg-white: #172048;
+[data-bs-theme='dark'] {
+  --header-bg-color: #121212;
+  --body-bg: #121212;
+  --text-color: #ffffff;
+  --black-color: #ffffff;
 }
+
+/* Import original CSS files */
+@import './assets/css/bitrader-cored1c0.css';
+@import './assets/css/bootstrap.mind1c0.css';
 
 body {
   margin: 0;
