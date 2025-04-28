@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
@@ -24,6 +25,7 @@ export const ThemeProvider = ({ children }) => {
 
   const toggleTheme = () => {
     setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    console.log("Theme toggled to:", theme === 'light' ? 'dark' : 'light');
   };
 
   return (
