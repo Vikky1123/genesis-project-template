@@ -11,12 +11,12 @@ const AboutSection = () => {
     <div className="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
       <div className="e-con-inner">
         <div className="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
-          <div className="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image">
+          <div className="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image" data-id="8a79fe6" data-element_type="widget" data-widget_type="genix-image.default">
             <div className="elementor-widget-container">
               <div className="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
                 <div className="about__thumb-inner">
                   <div className="about__thumb-image floating-content">
-                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="About" />
+                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="" />
                     
                     <div className="floating-content__top-left">
                       <div className="floating-content__item">
@@ -38,14 +38,14 @@ const AboutSection = () => {
           </div>
         </div>
         
-        <div className="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child">
-          <div className="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading">
+        <div className="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child" data-id="f496e11" data-element_type="container">
+          <div className="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading" data-id="2a404d7" data-element_type="widget" data-widget_type="heading.default">
             <div className="elementor-widget-container">
               <h2 className="elementor-heading-title elementor-size-default">Our <span style={{ color: 'var(--secondary-color)' }}>Strategic Partners</span> & Global Network</h2>
             </div>
           </div>
           
-          <div className="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading">
+          <div className="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading" data-id="77c0134" data-element_type="widget" data-widget_type="heading.default">
             <div className="elementor-widget-container">
               <p className="elementor-heading-title elementor-size-default">
                 We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.
@@ -53,7 +53,7 @@ const AboutSection = () => {
             </div>
           </div>
           
-          <div className="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn">
+          <div className="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn" data-id="211649c" data-element_type="widget" data-widget_type="tg-btn.default">
             <div className="elementor-widget-container">
               <div className="myclass1">     
                 <a href="/about-us" target="_self" rel="nofollow" className="trk-btn trk-btn--border trk-btn--primary">

@@ -1,4 +1,7 @@
 
+/* Import original CSS files - placing imports first to avoid CSS warnings */
+@import './assets/css/bitrader-cored1c0.css';
+@import './assets/css/bootstrap.mind1c0.css';
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
 :root {
@@ -27,10 +30,6 @@
   --text-color: #ffffff;
   --black-color: #ffffff;
 }
-
-/* Import original CSS files */
-@import './assets/css/bitrader-cored1c0.css';
-@import './assets/css/bootstrap.mind1c0.css';
 
 body {
   margin: 0;
