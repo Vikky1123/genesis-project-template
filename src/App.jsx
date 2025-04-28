@@ -1,5 +1,6 @@
+
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { useTheme } from './context/ThemeContext';
 import './assets/css/bitrader-cored1c0.css';
 import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/additional-styles.css';
@@ -7,7 +8,6 @@ import './assets/css/bitrader-customd1c0.css';
 import 'aos/dist/aos.css';
 import Header from './components/Header/Header';
 import MainSection from './components/MainSection/MainSection';
-import { ThemeProvider } from './context/ThemeContext';
 import ErrorBoundary from './components/ErrorBoundary';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
@@ -24,17 +24,13 @@ function App() {
   }, [theme]);
 
   return (
-    <ThemeProvider>
-      <Router>
-        <ErrorBoundary>
-          <div className="main-wrap">
-            <Header />
-            <MainSection />
-            <ScrollToTop />
-          </div>
-        </ErrorBoundary>
-      </Router>
-    </ThemeProvider>
+    <div className="main-wrap">
+      <ErrorBoundary>
+        <Header />
+        <MainSection />
+        <ScrollToTop />
+      </ErrorBoundary>
+    </div>
   );
 }
 
