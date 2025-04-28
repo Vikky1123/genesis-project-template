@@ -3,44 +3,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;500;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
-/* Core WordPress CSS Imports */
+/* Core CSS Imports */
 @import './assets/css/bitrader-cored1c0.css';
 @import './assets/css/bootstrap.mind1c0.css';
 @import './assets/css/bitrader-customd1c0.css';
 @import './assets/css/bitrader-fontsd1c0.css';
 @import './assets/css/aosd1c0.css';
+@import './assets/css/swiper.min.css';
 
-/* Contact Form & Header Footer Elementor */
+/* WordPress Includes */
 @import './assets/css/wp-includes/contact-form-7-styles.css';
 @import './assets/css/wp-includes/header-footer-elementor.css';
+@import './assets/css/wp-includes/style.mind1c0.css';
 
-/* Elementor Core CSS Imports */
+/* WordPress Content */
+@import './assets/css/wp-content/apple-webkit.min87cc.css';
+@import './assets/css/wp-content/brands52d5.css';
+@import './assets/css/wp-content/elementor-icons.min705c.css';
+@import './assets/css/wp-content/font-awesome.min1849.css';
+@import './assets/css/wp-content/fontawesome52d5.css';
+@import './assets/css/wp-content/frontend.min87cc.css';
+@import './assets/css/wp-content/frontend950a.css';
+@import './assets/css/wp-content/general.minb7d5.css';
+@import './assets/css/wp-content/header-footer-elementor950a.css';
+@import './assets/css/wp-content/solid52d5.css';
+@import './assets/css/wp-content/styles52c7.css';
+@import './assets/css/wp-content/swiper.min94a4.css';
+@import './assets/css/wp-content/widget-heading.min87cc.css';
+@import './assets/css/wp-content/widget-icon-box.min87cc.css';
+@import './assets/css/wp-content/widget-icon-list.min44b4.css';
+@import './assets/css/wp-content/widget-icon-list.min87cc.css';
+@import './assets/css/wp-content/widget-image.min87cc.css';
+@import './assets/css/wp-content/widget-social-icons.min2401.css';
+@import './assets/css/wp-content/widget-social-icons.min87cc.css';
+
+/* Elementor Core CSS */
 @import './assets/css/elementor/conditionals/apple-webkit.min87cc.css';
 @import './assets/css/elementor/frontend.min87cc.css';
 @import './assets/css/elementor/widget-heading.min87cc.css';
 @import './assets/css/elementor/widget-icon-box.min87cc.css';
-@import './assets/css/elementor/widget-icon-list.min87cc.css';
 @import './assets/css/elementor/widget-icon-list.min44b4.css';
+@import './assets/css/elementor/widget-icon-list.min87cc.css';
 @import './assets/css/elementor/widget-image.min87cc.css';
-@import './assets/css/elementor/widget-social-icons.min87cc.css';
 @import './assets/css/elementor/widget-social-icons.min2401.css';
-
-/* Additional Elementor Icons & Styles */
+@import './assets/css/elementor/widget-social-icons.min87cc.css';
 @import './assets/css/elementor/eicons.css';
-@import './assets/css/elementor/post-specific/post-7d50b.css';
-@import './assets/css/elementor/post-specific/post-678c47.css';
-@import './assets/css/elementor/post-specific/post-3678c47.css';
 
-/* Font Awesome Specific CSS */
+/* Elementor Addons */
+@import './assets/css/elementor/addons/eael-general.css';
+@import './assets/css/elementor/addons/general.minb7d5.css';
+
+/* Elementor Post-specific styles */
+@import './assets/css/elementor/post-specific/post-3678c47.css';
+@import './assets/css/elementor/post-specific/post-678c47.css';
+@import './assets/css/elementor/post-specific/post-7d50b.css';
+
+/* FontAwesome */
 @import './assets/css/fontawesome/brands.css';
 @import './assets/css/fontawesome/fontawesome.css';
 @import './assets/css/fontawesome/solid.css';
 
-/* Essential Addons */
-@import './assets/css/elementor/addons/eael-general.css';
-
-/* Swiper CSS */
-@import './assets/css/swiper.min.css';
+/* CoinEx Dashboard Styles */
+@import './assets/css/coinex.min862f.css';
+@import './assets/css/custom.min862f.css';
+@import './assets/css/libs.min.css';
 
 :root {
   --primary-color: #1B1D6A;
