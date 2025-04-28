@@ -2,7 +2,6 @@
 // CSS Variables Extractor Script
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
 
 // Function to extract CSS variables from a file
 function extractCssVariables(fileContent) {
@@ -12,20 +11,29 @@ function extractCssVariables(fileContent) {
 }
 
 // Function to search recursively for CSS files
-async function findCssFiles() {
-  return new Promise((resolve, reject) => {
-    glob('src/assets/css/**/*.css', (err, files) => {
-      if (err) reject(err);
-      else resolve(files);
-    });
-  });
+function findCssFiles(dir) {
+  let results = [];
+  const files = fs.readdirSync(dir);
+  
+  for (const file of files) {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    
+    if (stat.isDirectory() && !filePath.includes('node_modules')) {
+      results = results.concat(findCssFiles(filePath));
+    } else if (file.endsWith('.css')) {
+      results.push(filePath);
+    }
+  }
+  
+  return results;
 }
 
 // Main function
-async function main() {
+function main() {
   try {
     console.log('Searching for CSS files...');
-    const cssFiles = await findCssFiles();
+    const cssFiles = findCssFiles('./src/assets/css');
     console.log(`Found ${cssFiles.length} CSS files`);
 
     let allVariables = new Set();
@@ -33,12 +41,16 @@ async function main() {
 
     // Process each CSS file
     for (const file of cssFiles) {
-      const content = fs.readFileSync(file, 'utf8');
-      const variables = extractCssVariables(content);
-      
-      if (variables.length > 0) {
-        fileVariablesMap[file] = variables;
-        variables.forEach(v => allVariables.add(v));
+      try {
+        const content = fs.readFileSync(file, 'utf8');
+        const variables = extractCssVariables(content);
+        
+        if (variables.length > 0) {
+          fileVariablesMap[file] = variables;
+          variables.forEach(v => allVariables.add(v));
+        }
+      } catch (err) {
+        console.error(`Error reading file ${file}:`, err.message);
       }
     }
 
