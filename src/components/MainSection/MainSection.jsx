@@ -1,11 +1,13 @@
-
 import React from 'react';
+import HeroBanner from './HeroBanner';
+// Import other section components as needed
 
 const MainSection = () => {
   return (
-    <main className="main-content">
-      {/* MainSection content will go here */}
-    </main>
+    <>
+      <HeroBanner />
+      {/* Add other sections here */}
+    </>
   );
 };
 

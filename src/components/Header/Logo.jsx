@@ -1,16 +1,18 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { ThemeContext } from '../../context/ThemeContext';
-import '../../assets/css/bitrader-cored1c0.css';
+import { useTheme } from "../../context/ThemeContext.js";
+import './Header.module.css';
 
 const Logo = () => {
-  const { isDarkMode } = useContext(ThemeContext);
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
 
   return (
     <div className="logo">
-      <Link className="main-logo" to="/">
+      <Link className="secondary-logo" to="/">
         <img 
-          src={`/assets/img/uploads/2023/10/${isDarkMode ? 'logo-dark-2' : 'logo-dark-2'}.png`} 
+          src={`/wp-content/uploads/2024/06/${isDark ? 'logo-3.png' : 'logo-dark.png'}`} 
+          style={{ maxHeight: '30px' }} 
           alt="Bitrader Logo" 
         />
       </Link>

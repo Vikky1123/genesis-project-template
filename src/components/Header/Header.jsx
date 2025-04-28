@@ -3,82 +3,83 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
+import './Header.module.css';
+import '../ScrollToTop/ScrollToTop';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  
-  // Handle scroll event to add sticky class
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // Sticky header effect
   useEffect(() => {
     const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
     };
     
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
-    <header className={`header ${isSticky ? 'sticky-header' : ''}`}>
-      <div className="container">
-        <div className="row align-items-center justify-content-between">
-          <div className="col-xl-2 col-6">
-            <Logo />
-          </div>
-          <div className="col-xl-7 d-none d-xl-block">
-            <nav className="main-menu">
-              <ul className="menu-list">
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/services">Services</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-              </ul>
-            </nav>
-          </div>
-          <div className="col-xl-3 col-6 d-flex justify-content-end align-items-center">
-            <ThemeToggle />
-            <div className="d-xl-none">
-              <button 
-                className="mobile-menu-toggle" 
-                onClick={toggleMobileMenu}
-                aria-label="Toggle mobile menu"
-              >
-                <span></span>
-                <span></span>
-                <span></span>
-              </button>
-            </div>
-            <div className="d-none d-xl-block">
-              <Link to="/signup" className="btn btn-primary">Get Started</Link>
+    <>
+      <a href="#main-content" className="skip-link">Skip to content</a>
+      <ThemeToggle />
+      <header id="sticky-header" className={`header-section header-section--style3 ${isSticky ? 'header-fixed' : ''}`}>
+        <div className="header-bottom">
+          <div className="container">
+            <div className="header-wrapper">
+              <Logo />
+              <div className={`menu-area menu--style2 ${isMobileMenuOpen ? 'active' : ''}`}>
+                <ul id="menu-main-menu" className="menu menu">
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-815" className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1267 current_page_item active menu-item-815 nav-item">
+                    <Link title="Home" to="/" className="nav-links">Home</Link>
+                  </li>
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-816" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-816 nav-item">
+                    <Link title="Statistics" to="/statistics" className="nav-links">Statistics</Link>
+                  </li>
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-1463" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463 nav-item">
+                    <Link title="Investments" to="/investments" className="nav-links">Investments</Link>
+                  </li>
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-823" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-823 nav-item">
+                    <Link title="Services" to="/services" className="nav-links">Services</Link>
+                  </li>
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-818" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-818 nav-item">
+                    <Link title="About Us" to="/about-us" className="nav-links">About Us</Link>
+                  </li>
+                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-819" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-819 nav-item">
+                    <Link title="Contact Us" to="/contact-us" className="nav-links">Contact Us</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="header-action">
+                <div className="menu-area">
+                  <div className="header-btn">
+                    <Link to="/Signup-Signin" style={{backgroundColor:'#00d094', border: '1px solid #00d094'}} className="trk-btn trk-btn--border trk-btn--primary">
+                      <span>Join Now</span>
+                    </Link>
+                  </div>
+                  <div className={`header-bar d-lg-none header-bar--style2 ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-      {/* Mobile Menu */}
-      <div className={`mobile-menu-wrapper ${mobileMenuOpen ? 'active' : ''}`}>
-        <div className="mobile-menu-overlay" onClick={toggleMobileMenu}></div>
-        <div className="mobile-menu-container">
-          <button className="mobile-menu-close" onClick={toggleMobileMenu}>
-            <span>&times;</span>
-          </button>
-          <nav className="mobile-menu">
-            <ul className="menu-list">
-              <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
-              <li><Link to="/about" onClick={toggleMobileMenu}>About</Link></li>
-              <li><Link to="/services" onClick={toggleMobileMenu}>Services</Link></li>
-              <li><Link to="/blog" onClick={toggleMobileMenu}>Blog</Link></li>
-              <li><Link to="/contact" onClick={toggleMobileMenu}>Contact</Link></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+      </header>
+    </>
   );
 };
 
