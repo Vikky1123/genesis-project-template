@@ -1,25 +1,33 @@
 
-import React, { createContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ThemeContext = createContext();
 
-const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light');
+export const useTheme = () => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error('useTheme must be used within a ThemeProvider');
+  }
+  return context;
+};
 
-  useEffect(() => {
-    // Check local storage for saved theme preference
+export const ThemeProvider = ({ children }) => {
+  // Check if a theme is stored in localStorage, otherwise use 'light' as default
+  const [theme, setTheme] = useState(() => {
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.setAttribute('data-theme', savedTheme);
-    }
-  }, []);
+    return savedTheme || 'light';
+  });
 
+  // Update localStorage and document class when theme changes
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.documentElement.setAttribute('data-theme', theme);
+    document.body.className = theme === 'dark' ? 'dark-mode' : 'light-mode';
+  }, [theme]);
+
+  // Function to toggle between light and dark themes
   const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
   return (
@@ -29,12 +37,4 @@ const ThemeProvider = ({ children }) => {
   );
 };
 
-const useTheme = () => {
-  const context = React.useContext(ThemeContext);
-  if (context === undefined) {
-    throw new Error('useTheme must be used within a ThemeProvider');
-  }
-  return context;
-};
-
-export { ThemeContext, ThemeProvider, useTheme };
+export default ThemeContext;

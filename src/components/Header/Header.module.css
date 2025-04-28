@@ -1,3 +1,72 @@
+/* Header styles - most styles come from the original CSS files */
+
+/* Additional mobile menu styles */
+.header-bar {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+
+.header-bar span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.header-bar span:nth-child(1) {
+  top: 0;
+}
+
+.header-bar span:nth-child(2) {
+  top: 9px;
+}
+
+.header-bar span:nth-child(3) {
+  top: 18px;
+}
+
+.header-bar.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.header-bar.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-bar.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+@media (max-width: 991px) {
+  .menu-area.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    z-index: 999;
+    padding: 15px;
+  }
+
+  .menu-area:not(.active) ul.menu {
+    display: none;
+  }
+
+  .menu-area.active ul.menu {
+    display: block;
+  }
+
+  .menu-area.active ul.menu li {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
 /* Header styles directly from the original WordPress theme */
 :root {
@@ -114,7 +183,7 @@
   transition: color 0.3s ease;
 }
 
-.nav-links:hover, 
+.nav-links:hover,
 .current-menu-item .nav-links {
   color: var(--brand-color);
 }
@@ -218,11 +287,11 @@
   .d-lg-none {
     display: block;
   }
-  
+
   .header-bar {
     display: block;
   }
-  
+
   .menu-area {
     position: fixed;
     top: 0;
@@ -235,16 +304,16 @@
     transition: all 0.4s ease;
     overflow-y: auto;
   }
-  
+
   .menu-area.active {
     right: 0;
   }
-  
+
   .menu--style2 .menu {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .nav-links {
     padding: 12px 0;
     font-size: 18px;

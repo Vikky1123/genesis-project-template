@@ -1,10 +1,8 @@
-
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
       setIsVisible(true);
@@ -13,7 +11,6 @@ const ScrollToTop = () => {
     }
   };
 
-  // Set the scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -27,32 +24,13 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <a
-      href="#"
-      onClick={(e) => {
-        e.preventDefault();
-        scrollToTop();
-      }}
-      className={`scrollToTop scrollToTop--style2 scroll__top scroll-to-target ${isVisible ? 'active' : ''}`}
+    <a 
+      href="javascript:void(0)" 
+      className={`scrollToTop scrollToTop--style1 scroll__top scroll-to-target scrollToTop--home1 ${isVisible ? 'active' : ''}`} 
       data-target="html"
-      style={{ 
-        display: isVisible ? 'flex' : 'none',
-        position: 'fixed',
-        bottom: '30px',
-        right: '30px',
-        width: '40px',
-        height: '40px',
-        borderRadius: '50%',
-        background: '#00d094',
-        color: '#ffffff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        cursor: 'pointer',
-        zIndex: 99,
-        transition: 'all 0.3s ease'
-      }}
+      onClick={scrollToTop}
     >
-      <i className="fas fa-angle-up">↑</i>
+      <i className="fas fa-angle-up"></i>
     </a>
   );
 };
