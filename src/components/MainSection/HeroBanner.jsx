@@ -144,32 +144,11 @@ function HeroBanner({
                   </a>
                 </div>
                 
-                <div className="banner__content-stats" style={{
-                  display: "flex", 
-                  flexWrap: "wrap", 
-                  gap: "20px", 
-                  marginTop: "25px"
-                }}>
+                <div className="banner__content-stats">
                   {stats.map((stat, index) => (
-                    <div key={index} style={{
-                      flex: 1, 
-                      minWidth: "120px", 
-                      textAlign: "center", 
-                      padding: "12px 10px", 
-                      background: "rgba(43, 78, 255, 0.1)", 
-                      borderRadius: "12px", 
-                      boxShadow: "0 4px 12px rgba(0,0,0,0.05)"
-                    }}>
-                      <h2 style={{
-                        fontSize: "32px", 
-                        fontWeight: 700, 
-                        color: "var(--secondary-color)", 
-                        margin: 0
-                      }}>{stat.value}</h2>
-                      <p style={{
-                        fontSize: "14px", 
-                        margin: "5px 0 0"
-                      }}>{stat.label}</p>
+                    <div key={index} className="stat-box">
+                      <h2 className="stat-value">{stat.value}</h2>
+                      <p className="stat-label">{stat.label}</p>
                     </div>
                   ))}
                 </div>

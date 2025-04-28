@@ -113,3 +113,23 @@
   display: inline-flex;
   margin-right: 8px;
 }
+
+/* Animation styles for the banner image */
+@media (min-width: 992px) {
+  .banner__thumb {
+    -webkit-animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+    -moz-animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+    -ms-animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+    -o-animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+    animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  }
+}
+
+@keyframes left-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(15px);
+  }
+}
