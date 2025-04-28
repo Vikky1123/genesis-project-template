@@ -9,9 +9,10 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     hmr: {
-      host: '0.0.0.0',
+      host: 'localhost',
       clientPort: 443,
-      protocol: 'wss'
+      protocol: 'wss',
+      timeout: 10000
     },
     cors: true,
     headers: {
