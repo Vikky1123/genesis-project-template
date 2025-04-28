@@ -1,0 +1,32 @@
+
+/* HeroBanner specific styles */
+.banner__content-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.stat-box {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding: 12px 10px;
+  background: rgba(43, 78, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.stat-label {
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/* Note: The banner__content-social and other banner classes are available in the global CSS */
