@@ -7,6 +7,7 @@ import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ThemeToggle from './components/Header/ThemeToggle';
 import HeroBanner from './components/MainSection/HeroBanner';
+import MainSection from './components/MainSection/MainSection';
 import ErrorBoundary from './components/ErrorBoundary';
 
 // Import CSS files for proper styling
