@@ -8,6 +8,8 @@ export default defineConfig({
     host: '0.0.0.0', 
     port: 5173,
     hmr: {
+      protocol: 'ws',
+      host: '0.0.0.0',
       clientPort: 443
     },
     headers: {
@@ -15,10 +17,6 @@ export default defineConfig({
     },
     watch: {
       usePolling: true
-    },
-    strictPort: true,
-    allowedHosts: [
-      '.replit.dev'
-    ]
+    }
   }
 })

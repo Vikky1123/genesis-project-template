@@ -1,7 +1,5 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 import './Header.module.css';
 import '../ScrollToTop/ScrollToTop';
@@ -19,7 +17,7 @@ const Header = () => {
         setIsSticky(false);
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -38,7 +36,11 @@ const Header = () => {
         <div className="header-bottom">
           <div className="container">
             <div className="header-wrapper">
-              <Logo />
+              <div className="header-logo"> {/* Added logo container */}
+                <a href="/">
+                  <img src="/assets/img/uploads/2023/10/logo-dark-2.png" alt="Logo" className="main-logo" /> {/* Added logo image */}
+                </a>
+              </div>
               <div className={`menu-area menu--style2 ${isMobileMenuOpen ? 'active' : ''}`}>
                 <ul id="menu-main-menu" className="menu menu">
                   <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-815" className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1267 current_page_item active menu-item-815 nav-item">

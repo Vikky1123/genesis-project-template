@@ -21,7 +21,7 @@ args = "pkill -f vite || true"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npx vite"
+args = "npm run dev"
 
 [[ports]]
 localPort = 5000
