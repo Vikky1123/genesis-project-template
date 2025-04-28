@@ -5,10 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server: {
-    host: '0.0.0.0', 
-    port: 5173,
+    host: '0.0.0.0',
+    port: 3002,
     hmr: {
-      clientPort: 443
+      clientPort: 3002,
+      host: '5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev'
     },
     headers: {
       'Access-Control-Allow-Origin': '*'
@@ -16,7 +17,7 @@ export default defineConfig({
     watch: {
       usePolling: true
     },
-    strictPort: false,
+    strictPort: true,
     allowedHosts: [
       '5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev',
       '.replit.dev'
