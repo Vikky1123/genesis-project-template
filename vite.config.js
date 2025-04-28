@@ -22,7 +22,7 @@ export default defineConfig({
       strict: false
     },
     cors: true,
-    // Allow all hosts, including your Replit domain
-    allowedHosts: 'all'
+    // Allow the specific Replit domain
+    allowedHosts: ["5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev"]
   }
 })
