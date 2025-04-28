@@ -1,151 +1,162 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
+import React, { useState } from 'react';
 import '../../assets/css/bitrader-cored1c0.css';
-import '../../assets/css/elementor/frontend.min87cc.css';
+import '../../assets/css/aosd1c0.css';
 
 const FeatureTabs = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const [activeTab, setActiveTab] = useState(1);
+
+  const handleTabClick = (tabIndex) => {
+    setActiveTab(tabIndex);
+  };
 
   return (
-    <section className="feature feature--style1 padding-bottom padding-top bg-color">
+    <section className="features-section padding-top padding-bottom" id="features">
       <div className="container">
-        <div className="feature__wrapper">
-          <div className="row g-5 align-items-center justify-content-between">
-            <div className="col-md-6 col-lg-5">
-              <div className="feature__content" data-aos="fade-right" data-aos-duration="800">
-                <div className="feature__content-inner">
-                  <div className="section-header">
-                    <h2 className="mb-15 mt-minus-5 el-section-title">
-                      <span style={{color: 'var(--secondary-color)'}}>Platform </span> Statistics
-                    </h2>
-                    <p className="mb-0 el-section-description">
-                      Explore our impressive performance metrics that make Bitrader a leading choice for traders worldwide.
-                    </p>
-                  </div>
+        <div className="section-title text-center">
+          <h2 className="title" data-aos="fade-up">Platform Features</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Explore our comprehensive set of features designed for traders of all levels</p>
+        </div>
 
-                  <div className="feature__nav">
-                    <div className="nav nav--feature flex-column nav-pills" id="feat-pills-tab" role="tablist" aria-orientation="vertical">
-                      {[
-                        "Consistently high success rate across all trading pairs",
-                        "Average daily volume with minimal transaction fees", 
-                        "Growing user base with exceptional retention rates",
-                        "Ultra-fast transaction processing with advanced security"
-                      ].map((text, i) => (
-                        <div 
-                          key={i}
-                          className={`nav-link ${i === 0 ? 'active' : ''}`}
-                          id={`tg-tab-${i}`}
-                          data-bs-toggle="pill"
-                          data-bs-target={`#tg-id-${i}`}
-                          role="tab"
-                          aria-controls={`tg-id-${i}`}
-                          aria-selected={i === 0}
-                        >
-                          <div className="feature__item">
-                            <div className="feature__item-inner">
-                              <div className="feature__item-content">
-                                <h6>{text}</h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
+        <div className="features-tabs" data-aos="fade-up" data-aos-delay="200">
+          <div className="tabs-nav">
+            <ul className="nav nav-tabs">
+              <li className="nav-item">
+                <button 
+                  className={`nav-link ${activeTab === 1 ? 'active' : ''}`} 
+                  onClick={() => handleTabClick(1)}
+                >
+                  <img src="/assets/img/uploads/2023/10/features_icon01.png" alt="Trading" />
+                  <span>Trading</span>
+                </button>
+              </li>
+              <li className="nav-item">
+                <button 
+                  className={`nav-link ${activeTab === 2 ? 'active' : ''}`} 
+                  onClick={() => handleTabClick(2)}
+                >
+                  <img src="/assets/img/uploads/2023/10/features_icon02.png" alt="Wallet" />
+                  <span>Wallet</span>
+                </button>
+              </li>
+              <li className="nav-item">
+                <button 
+                  className={`nav-link ${activeTab === 3 ? 'active' : ''}`} 
+                  onClick={() => handleTabClick(3)}
+                >
+                  <img src="/assets/img/uploads/2023/10/features_icon03.png" alt="Security" />
+                  <span>Security</span>
+                </button>
+              </li>
+              <li className="nav-item">
+                <button 
+                  className={`nav-link ${activeTab === 4 ? 'active' : ''}`} 
+                  onClick={() => handleTabClick(4)}
+                >
+                  <img src="/assets/img/uploads/2023/10/features_icon04.png" alt="Analytics" />
+                  <span>Analytics</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div className="tab-content">
+            <div className={`tab-pane fade ${activeTab === 1 ? 'show active' : ''}`}>
+              <div className="features-content">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="features-content-inner">
+                      <h3>Advanced Trading Tools</h3>
+                      <p>Access a comprehensive suite of trading tools including limit orders, stop-loss, real-time charts, and technical indicators to enhance your trading strategy.</p>
+                      <ul className="list-unstyled">
+                        <li><i className="fas fa-check"></i> Real-time market data</li>
+                        <li><i className="fas fa-check"></i> Multiple order types</li>
+                        <li><i className="fas fa-check"></i> Advanced charting tools</li>
+                        <li><i className="fas fa-check"></i> Technical indicators</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="features-image">
+                      <img src="/assets/img/uploads/2023/10/features01.png" alt="Trading Features" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-6 col-lg-6">
-              <div className="feature__thumb pt-5 pt-md-0" data-aos="fade-left" data-aos-duration="800">
-                <div className="feature__thumb-inner">
-                  <div className="tab-content" id="feat-pills-tabContent">
-                    {[
-                      {
-                        img: "features01.png",
-                        percentImg: "percent01.png",
-                        label: "Success Rate",
-                        stat: "89%",
-                        desc: "Trading Success"
-                      },
-                      {
-                        img: "features02.png",
-                        percentImg: "percent02.png",
-                        label: "Daily Volume",
-                        stat: "$18M",
-                        desc: "Trading Volume"
-                      },
-                      {
-                        img: "features01.png",
-                        percentImg: "percent03.png",
-                        label: "User Growth",
-                        stat: "30K+",
-                        desc: "Active Users"
-                      },
-                      {
-                        img: "features02.png",
-                        percentImg: "percent04.png",
-                        label: "Transaction Speed",
-                        stat: "0.02s",
-                        desc: "Processing Time"
-                      }
-                    ].map((tab, i) => (
-                      <div 
-                        key={i}
-                        className={`tab-pane fade ${i === 0 ? 'show active' : ''}`}
-                        id={`tg-id-${i}`}
-                        role="tabpanel"
-                        aria-labelledby={`tg-tab-${i}`}
-                        tabIndex="0"
-                      >
-                        <div className="feature__image floating-content">
-                          <img 
-                            decoding="async" 
-                            src={`${process.env.PUBLIC_URL}/wp-content/uploads/2023/10/${tab.img}`} 
-                            alt="Feature image" 
-                          />
+            <div className={`tab-pane fade ${activeTab === 2 ? 'show active' : ''}`}>
+              <div className="features-content">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="features-content-inner">
+                      <h3>Secure Wallet System</h3>
+                      <p>Keep your assets safe with our state-of-the-art wallet system featuring multi-signature protection, cold storage options, and two-factor authentication.</p>
+                      <ul className="list-unstyled">
+                        <li><i className="fas fa-check"></i> Multi-signature security</li>
+                        <li><i className="fas fa-check"></i> Cold storage for 95% of assets</li>
+                        <li><i className="fas fa-check"></i> Two-factor authentication</li>
+                        <li><i className="fas fa-check"></i> Regular security audits</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="features-image">
+                      <img src="/assets/img/uploads/2023/10/features02.png" alt="Wallet Features" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                          <div className="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
-                            <div className="floating-content__item floating-content__item--style2 text-center">
-                              <img 
-                                decoding="async" 
-                                src={`${process.env.PUBLIC_URL}/wp-content/uploads/2023/10/${tab.percentImg}`}
-                                width="80" 
-                                alt="Feature image"
-                              />
-                              <p className="style2">{tab.label}</p>
-                            </div>
-                          </div>
+            <div className={`tab-pane fade ${activeTab === 3 ? 'show active' : ''}`}>
+              <div className="features-content">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="features-content-inner">
+                      <h3>Advanced Security Measures</h3>
+                      <p>Rest easy knowing your account has enterprise-grade security with encryption, biometric verification, and real-time monitoring for suspicious activities.</p>
+                      <ul className="list-unstyled">
+                        <li><i className="fas fa-check"></i> AES-256 encryption</li>
+                        <li><i className="fas fa-check"></i> Real-time fraud monitoring</li>
+                        <li><i className="fas fa-check"></i> Biometric verification options</li>
+                        <li><i className="fas fa-check"></i> Regular penetration testing</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="features-image">
+                      <img src="/assets/img/uploads/2023/10/services03.png" alt="Security Features" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                          <div className="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
-                            <div className="floating-content__item floating-content__item--style3 d-flex align-items-center">
-                              <h3 className="style2">{tab.stat}</h3>
-                              <p className="ms-3 style2">{tab.desc}</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
+            <div className={`tab-pane fade ${activeTab === 4 ? 'show active' : ''}`}>
+              <div className="features-content">
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="features-content-inner">
+                      <h3>Comprehensive Analytics</h3>
+                      <p>Track your performance with detailed analytics and reporting. Gain insights into your trading patterns, portfolio performance, and market trends.</p>
+                      <ul className="list-unstyled">
+                        <li><i className="fas fa-check"></i> Portfolio performance tracking</li>
+                        <li><i className="fas fa-check"></i> Trading pattern analysis</li>
+                        <li><i className="fas fa-check"></i> Market trend identification</li>
+                        <li><i className="fas fa-check"></i> Customizable reporting</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="features-image">
+                      <img src="/assets/img/uploads/2023/10/services04.png" alt="Analytics Features" />
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="feature__shape">
-        <span className="feature_shape-item feature_shape-item--1">
-          <img 
-            decoding="async" 
-            src={`${process.env.PUBLIC_URL}/wp-content/uploads/2023/10/features_shape.png`}
-            width="70" 
-            alt="shape-icon"
-          />
-        </span>
-        <span className="feature_shape-item feature_shape-item--2"><span></span></span>
       </div>
     </section>
   );

@@ -9,12 +9,17 @@
 @import './assets/css/bitrader-customd1c0.css';
 @import './assets/css/bitrader-fontsd1c0.css';
 @import './assets/css/aosd1c0.css';
+
+/* Elementor CSS Imports */
+@import './assets/css/elementor/conditionals/apple-webkit.min87cc.css';
 @import './assets/css/elementor/frontend.min87cc.css';
 @import './assets/css/elementor/widget-heading.min87cc.css';
 @import './assets/css/elementor/widget-icon-box.min87cc.css';
 @import './assets/css/elementor/widget-icon-list.min87cc.css';
+@import './assets/css/elementor/widget-icon-list.min44b4.css';
 @import './assets/css/elementor/widget-image.min87cc.css';
 @import './assets/css/elementor/widget-social-icons.min87cc.css';
+@import './assets/css/elementor/widget-social-icons.min2401.css';
 
 :root {
 

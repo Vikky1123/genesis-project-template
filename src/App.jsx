@@ -10,7 +10,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// CSS imports
+// Core CSS imports
 import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/bitrader-fontsd1c0.css';
 import './assets/css/bitrader-cored1c0.css';
@@ -18,10 +18,25 @@ import './assets/css/bitrader-customd1c0.css';
 import './assets/css/aosd1c0.css';
 
 // Elementor CSS imports
+import './assets/css/elementor/conditionals/apple-webkit.min87cc.css';
 import './assets/css/elementor/frontend.min87cc.css';
 import './assets/css/elementor/widget-icon-list.min87cc.css';
+import './assets/css/elementor/widget-icon-list.min44b4.css';
 import './assets/css/elementor/widget-heading.min87cc.css';
 import './assets/css/elementor/widget-image.min87cc.css';
+import './assets/css/elementor/widget-icon-box.min87cc.css';
+import './assets/css/elementor/widget-social-icons.min2401.css';
+import './assets/css/elementor/widget-social-icons.min87cc.css';
+
+// WordPress includes and extras
+import './assets/js/wp-includes/jquery/jquery.minf43b.js';
+import './assets/js/wp-includes/jquery/jquery-migrate.min5589.js';
+import './assets/js/bootstrap.mind1c0.js';
+import './assets/js/fslightboxd1c0.js';
+import './assets/js/isotope.pkgd.mind1c0.js';
+import './assets/js/aosd1c0.js';
+import './assets/js/purecounter_vanillad1c0.js';
+import './assets/js/customd1c0.js';
 
 //Import Swiper styles 
 import 'swiper/css';

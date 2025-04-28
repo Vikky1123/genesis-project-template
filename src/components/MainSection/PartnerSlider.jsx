@@ -1,79 +1,47 @@
-
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/autoplay';
 
 const PartnerSlider = () => {
+  const partners = [
+    { id: 1, img: '/assets/img/uploads/2023/10/barnd01-2.png', alt: 'Partner 1' },
+    { id: 2, img: '/assets/img/uploads/2023/10/barnd02-2.png', alt: 'Partner 2' },
+    { id: 3, img: '/assets/img/uploads/2023/10/barnd03-2.png', alt: 'Partner 3' },
+    { id: 4, img: '/assets/img/uploads/2023/10/barnd04-2.png', alt: 'Partner 4' },
+    { id: 5, img: '/assets/img/uploads/2023/10/barnd05-2.png', alt: 'Partner 5' },
+    { id: 6, img: '/assets/img/uploads/2023/10/barnd06-2.png', alt: 'Partner 6' }
+  ];
+
   return (
-    <section className="brand-area brand-bg">
+    <section className="partners-section">
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-6">
-            <div className="section-title text-center mb-50">
-              <h2 className="title">Trusted by <span>1,000+</span> Companies</h2>
-            </div>
-          </div>
+        <div className="section-title text-center">
+          <h2 className="title" data-aos="fade-up">Our Trusted Partners</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Join the growing list of satisfied customers who trust our platform</p>
         </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="swiper-container brand-active">
-              <Swiper
-                modules={[Autoplay]}
-                slidesPerView={5}
-                spaceBetween={30}
-                loop={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                breakpoints={{
-                  320: {
-                    slidesPerView: 2,
-                  },
-                  576: {
-                    slidesPerView: 3,
-                  },
-                  768: {
-                    slidesPerView: 4,
-                  },
-                  1200: {
-                    slidesPerView: 5,
-                  },
-                }}
-              >
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd01-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd02-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd03-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd04-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd05-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="brand-item">
-                    <img src="/assets/img/uploads/2023/10/barnd06-2.png" alt="Brand Logo" />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-          </div>
+        <div className="partners-slider" data-aos="fade-up" data-aos-delay="200">
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={30}
+            slidesPerView={2}
+            autoplay={{ delay: 2500, disableOnInteraction: false }}
+            loop={true}
+            breakpoints={{
+              640: { slidesPerView: 3 },
+              768: { slidesPerView: 4 },
+              1024: { slidesPerView: 5 }
+            }}
+          >
+            {partners.map(partner => (
+              <SwiperSlide key={partner.id}>
+                <div className="partner-item">
+                  <img src={partner.img} alt={partner.alt} />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </section>
