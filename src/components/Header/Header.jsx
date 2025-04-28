@@ -1,68 +1,83 @@
+
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-
-  // Handle sticky header on scroll
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  // Handle scroll event to add sticky class
   useEffect(() => {
     const handleScroll = () => {
       setIsSticky(window.scrollY > 100);
     };
-
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
   };
 
   return (
-    <header className={`header-area ${isSticky ? 'sticky-header' : ''}`}>
+    <header className={`header ${isSticky ? 'sticky-header' : ''}`}>
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-lg-3 col-md-6 col-7">
+        <div className="row align-items-center justify-content-between">
+          <div className="col-xl-2 col-6">
             <Logo />
           </div>
-          <div className="col-lg-6 col-md-0 d-none d-lg-block">
+          <div className="col-xl-7 d-none d-xl-block">
             <nav className="main-menu">
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+              <ul className="menu-list">
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/about">About</Link></li>
+                <li><Link to="/services">Services</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
               </ul>
             </nav>
           </div>
-          <div className="col-lg-3 col-md-6 col-5 d-flex justify-content-end">
-            <div className="header-action">
-              <ThemeToggle />
-              <a href="#signup" className="btn">Sign Up</a>
-              <button className="menu-toggle d-lg-none" onClick={toggleMenu}>
-                <span className={isMenuOpen ? 'open' : ''}></span>
+          <div className="col-xl-3 col-6 d-flex justify-content-end align-items-center">
+            <ThemeToggle />
+            <div className="d-xl-none">
+              <button 
+                className="mobile-menu-toggle" 
+                onClick={toggleMobileMenu}
+                aria-label="Toggle mobile menu"
+              >
+                <span></span>
+                <span></span>
+                <span></span>
               </button>
+            </div>
+            <div className="d-none d-xl-block">
+              <Link to="/signup" className="btn btn-primary">Get Started</Link>
             </div>
           </div>
         </div>
       </div>
+      
       {/* Mobile Menu */}
-      {isMenuOpen && (
+      <div className={`mobile-menu-wrapper ${mobileMenuOpen ? 'active' : ''}`}>
+        <div className="mobile-menu-overlay" onClick={toggleMobileMenu}></div>
         <div className="mobile-menu-container">
+          <button className="mobile-menu-close" onClick={toggleMobileMenu}>
+            <span>&times;</span>
+          </button>
           <nav className="mobile-menu">
-            <ul>
-              <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-              <li><a href="#about" onClick={toggleMenu}>About</a></li>
-              <li><a href="#features" onClick={toggleMenu}>Features</a></li>
-              <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-              <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+            <ul className="menu-list">
+              <li><Link to="/" onClick={toggleMobileMenu}>Home</Link></li>
+              <li><Link to="/about" onClick={toggleMobileMenu}>About</Link></li>
+              <li><Link to="/services" onClick={toggleMobileMenu}>Services</Link></li>
+              <li><Link to="/blog" onClick={toggleMobileMenu}>Blog</Link></li>
+              <li><Link to="/contact" onClick={toggleMobileMenu}>Contact</Link></li>
             </ul>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 };
