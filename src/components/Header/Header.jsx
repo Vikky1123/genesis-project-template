@@ -1,85 +1,113 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
-import './Header.module.css';
-import '../ScrollToTop/ScrollToTop';
+import '../../assets/css/bitrader-cored1c0.css';
 
 const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null);
 
-  // Sticky header effect
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Handle sticky header
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsSticky(true);
-      } else {
-        setIsSticky(false);
-      }
+      setIsSticky(window.scrollY > 100);
     };
     
     window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // Handle click outside to close menu
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) && isMenuOpen) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isMenuOpen]);
+
+  const menuItems = [
+    { title: "Home", path: "/" },
+    { title: "Statistics", path: "/statistics" },
+    { title: "Investments", path: "/investments" },
+    { title: "Services", path: "/services" },
+    { title: "About Us", path: "/about-us" },
+    { title: "Contact Us", path: "/contact-us" }
+  ];
 
   return (
-    <>
-      <a href="#main-content" className="skip-link">Skip to content</a>
-      <ThemeToggle />
-      <header id="sticky-header" className={`header-section header-section--style3 ${isSticky ? 'header-fixed' : ''}`}>
-        <div className="header-bottom">
-          <div className="container">
-            <div className="header-wrapper">
-              <Logo />
-              <div className={`menu-area menu--style2 ${isMobileMenuOpen ? 'active' : ''}`}>
-                <ul id="menu-main-menu" className="menu menu">
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-815" className="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1267 current_page_item active menu-item-815 nav-item">
-                    <Link title="Home" to="/" className="nav-links">Home</Link>
-                  </li>
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-816" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-816 nav-item">
-                    <Link title="Statistics" to="/statistics" className="nav-links">Statistics</Link>
-                  </li>
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-1463" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1463 nav-item">
-                    <Link title="Investments" to="/investments" className="nav-links">Investments</Link>
-                  </li>
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-823" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-823 nav-item">
-                    <Link title="Services" to="/services" className="nav-links">Services</Link>
-                  </li>
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-818" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-818 nav-item">
-                    <Link title="About Us" to="/about-us" className="nav-links">About Us</Link>
-                  </li>
-                  <li itemScope="itemscope" itemType="https://www.schema.org/SiteNavigationElement" id="menu-item-819" className="menu-item menu-item-type-post_type menu-item-object-page menu-item-819 nav-item">
-                    <Link title="Contact Us" to="/contact-us" className="nav-links">Contact Us</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="header-action">
-                <div className="menu-area">
-                  <div className="header-btn">
-                    <Link to="/Signup-Signin" style={{backgroundColor:'#00d094', border: '1px solid #00d094'}} className="trk-btn trk-btn--border trk-btn--primary">
-                      <span>Join Now</span>
+    <header id="sticky-header" className={`header-section header-section--style2 ${isSticky ? 'header-fixed' : ''}`}>
+      <div className="header-bottom">
+        <div className="container">
+          <div className="header-wrapper">
+            <Logo />
+            <div className={`menu-area menu--style1 ${isMenuOpen ? 'active' : ''}`}>
+              <ul 
+                id="menu-main-menu" 
+                className="menu menu" 
+                ref={menuRef} 
+                role="navigation" 
+                aria-label="Main navigation"
+              >
+                {menuItems.map((item, index) => (
+                  <li 
+                    key={index} 
+                    className="menu-item menu-item-type-post_type menu-item-object-page nav-item"
+                  >
+                    <Link 
+                      to={item.path} 
+                      className="nav-links" 
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.title}
                     </Link>
-                  </div>
-                  <div className={`header-bar d-lg-none header-bar--style2 ${isMobileMenuOpen ? 'active' : ''}`} onClick={toggleMobileMenu}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="header-action">
+              <div className="menu-area">
+                <div className="header-btn">
+                  <Link
+                    to="/signup"
+                    style={{backgroundColor:'#00d094', border: '1px solid #00d094'}}
+                    className="trk-btn trk-btn--border trk-btn--primary"
+                  >
+                    <span>Join Now</span>
+                  </Link>
+                </div>
+                
+                <div
+                  className={`header-bar d-lg-none header-bar--style1 ${isMenuOpen ? 'active' : ''}`}
+                  onClick={toggleMenu}
+                  aria-expanded={isMenuOpen}
+                  aria-label="Toggle navigation menu"
+                  aria-controls="menu-main-menu"
+                  role="button"
+                  tabIndex={0}
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </header>
-    </>
+      </div>
+      
+      <ThemeToggle />
+    </header>
   );
 };
 
