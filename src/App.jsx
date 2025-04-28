@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useTheme } from './context/ThemeContext';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
@@ -13,6 +15,11 @@ const App = () => {
 
   useEffect(() => {
     setAppMounted(true);
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 0
+    });
   }, []);
 
   return (
