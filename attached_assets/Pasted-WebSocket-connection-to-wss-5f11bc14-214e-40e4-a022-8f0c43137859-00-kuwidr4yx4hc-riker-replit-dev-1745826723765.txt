@@ -1,0 +1,53 @@
+WebSocket connection to 'wss://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev/?token=Ey59Svub4xCG' failed: 
+createConnection @ client:802
+connect @ client:437
+connect @ client:811
+connect @ client:290
+connect @ client:383
+(anonymous) @ client:908
+App.jsx:21  Uncaught ReferenceError: ThemeToggle is not defined
+    at App (App.jsx:21:10)
+    at react-stack-bottom-frame (react-dom-client.development.js:23863:20)
+    at renderWithHooks (react-dom-client.development.js:5529:22)
+    at updateFunctionComponent (react-dom-client.development.js:8897:19)
+    at beginWork (react-dom-client.development.js:10522:18)
+    at runWithFiberInDEV (react-dom-client.development.js:1519:30)
+    at performUnitOfWork (react-dom-client.development.js:15132:22)
+    at workLoopSync (react-dom-client.development.js:14956:41)
+    at renderRootSync (react-dom-client.development.js:14936:11)
+    at performWorkOnRoot (react-dom-client.development.js:14462:44)
+App @ App.jsx:21
+react-stack-bottom-frame @ react-dom-client.development.js:23863
+renderWithHooks @ react-dom-client.development.js:5529
+updateFunctionComponent @ react-dom-client.development.js:8897
+beginWork @ react-dom-client.development.js:10522
+runWithFiberInDEV @ react-dom-client.development.js:1519
+performUnitOfWork @ react-dom-client.development.js:15132
+workLoopSync @ react-dom-client.development.js:14956
+renderRootSync @ react-dom-client.development.js:14936
+performWorkOnRoot @ react-dom-client.development.js:14462
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+react-dom-client.development.js:8283  An error occurred in the <App> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+defaultOnUncaughtError @ react-dom-client.development.js:8283
+logUncaughtError @ react-dom-client.development.js:8352
+runWithFiberInDEV @ react-dom-client.development.js:1519
+lane.callback @ react-dom-client.development.js:8382
+callCallback @ react-dom-client.development.js:5363
+commitCallbacks @ react-dom-client.development.js:5383
+runWithFiberInDEV @ react-dom-client.development.js:1522
+commitLayoutEffectOnFiber @ react-dom-client.development.js:12709
+flushLayoutEffects @ react-dom-client.development.js:15559
+commitRoot @ react-dom-client.development.js:15402
+commitRootWhenReady @ react-dom-client.development.js:14652
+performWorkOnRoot @ react-dom-client.development.js:14575
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+client:841  [vite] failed to connect to websocket (Error: WebSocket closed without opened.). 
+connect @ client:841
+client:454  Uncaught (in promise) Error: WebSocket closed without opened.
+    at WebSocket.<anonymous> (client:454:22)
