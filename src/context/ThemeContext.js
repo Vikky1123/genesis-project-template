@@ -1,29 +1,40 @@
-import React, { createContext, useState, useEffect } from 'react';
+
+import React, { createContext, useState, useEffect, useContext } from 'react';
 
 const ThemeContext = createContext();
 
-const ThemeProvider = ({ children, initialTheme = 'light' }) => {
-  const [isDarkMode, setIsDarkMode] = useState(initialTheme === 'dark');
+export const useTheme = () => {
+  return useContext(ThemeContext);
+};
+
+export const ThemeProvider = ({ children }) => {
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
-    // Apply theme class to the document
-    document.documentElement.classList.toggle('dark-mode', isDarkMode);
-    document.documentElement.classList.toggle('light-mode', !isDarkMode);
-  }, [isDarkMode]);
+    // Check local storage for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      setTheme('dark');
+      document.body.classList.add('dark-mode');
+    }
+  }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    if (theme === 'light') {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
   };
 
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-export const useTheme = () => {
-  return React.useContext(ThemeContext);
-};
-
-export { ThemeContext, ThemeProvider };
+export default ThemeContext;
