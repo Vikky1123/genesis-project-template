@@ -1,37 +1,29 @@
-import React, { useEffect } from 'react';
-import AOS from 'aos';
-import HeroBanner from './HeroBanner';
-import AboutSection from './AboutSection';
-import PartnerSlider from './PartnerSlider';
-import ElementorSection from './ElementorSection';
-import FeatureTabs from './FeatureTabs';
 
-// Import CSS files specific to these components
-import '../../assets/css/bitrader-cored1c0.css';
-import '../../assets/css/bitrader-customd1c0.css';
-import '../../assets/css/aosd1c0.css';
-import '../../assets/css/elementor/frontend.min87cc.css';
+import React from 'react';
 
 const MainSection = () => {
-  useEffect(() => {
-    // Initialize AOS when component mounts
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    });
-  }, []);
-
   return (
-    <main className="main-area fix">
-      <HeroBanner />
-      <AboutSection />
-      <ElementorSection />
-      <PartnerSlider />
-      <FeatureTabs />
-      {/* Add other sections as needed */}
-    </main>
+    <div className="main-content">
+      <div className="container">
+        <h1 className="text-center">Welcome to BitTrader</h1>
+        <p className="text-center">Your cryptocurrency trading platform</p>
+        <div className="row my-5">
+          <div className="col-md-6 offset-md-3">
+            <div className="card p-4 shadow">
+              <h3>Get Started Today</h3>
+              <p>Start trading cryptocurrencies with our easy-to-use platform.</p>
+              <ul className="list-unstyled">
+                <li>✓ Real-time market data</li>
+                <li>✓ Secure transactions</li>
+                <li>✓ Expert trading insights</li>
+                <li>✓ Low trading fees</li>
+              </ul>
+              <button className="btn btn-primary mt-3">Join Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -8,10 +8,11 @@ export default defineConfig({
     host: '0.0.0.0', 
     port: 5000,
     hmr: {
-      host: '0.0.0.0',
       clientPort: 443,
       protocol: 'wss',
-      timeout: 120000
+      timeout: 120000,
+      overlay: true,
+      path: 'hmr'
     },
     headers: {
       'Access-Control-Allow-Origin': '*'

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useTheme } from './context/ThemeContext'; 
+import { useTheme } from './context/ThemeContext';
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
