@@ -1,24 +1,21 @@
-
-import React, { useContext } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import '../../assets/css/bitrader-cored1c0.css';
+import React from 'react';
+import { useTheme } from "../../context/ThemeContext.jsx";
+import './Header.module.css';
 
 const ThemeToggle = () => {
-  const { isDarkMode, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useTheme();
+  const isDark = theme === 'dark';
 
   return (
     <div className="lightdark-switch">
       <span 
-        className="switch-btn dark-btn" 
+        className="switch-btn" 
         id="btnSwitch" 
-        style={{ backgroundColor: 'rgb(0, 208, 148)' }}
+        style={{ backgroundColor: '#00d094' }}
         onClick={toggleTheme}
-        role="button"
-        aria-pressed={isDarkMode}
-        tabIndex="0"
       >
         <img 
-          src={`/wp-content/themes/bitrader/assets/img/icons/${isDarkMode ? 'sun' : 'moon'}.svg`} 
+          src={`/wp-content/themes/bitrader/assets/img/icons/${isDark ? 'sun.svg' : 'moon.svg'}`} 
           alt="light-dark-switchbtn" 
           className="swtich-icon"
         />
