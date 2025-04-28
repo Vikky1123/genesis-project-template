@@ -1,112 +1,68 @@
-
-import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import Logo from './Logo';
 import ThemeToggle from './ThemeToggle';
-import '../../assets/css/bitrader-cored1c0.css';
 
 const Header = () => {
-  const [isSticky, setIsSticky] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const menuRef = useRef(null);
+  const [isSticky, setIsSticky] = useState(false);
+
+  // Handle sticky header on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsSticky(window.scrollY > 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Handle sticky header
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsSticky(window.scrollY > 100);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Handle click outside to close menu
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target) && isMenuOpen) {
-        setIsMenuOpen(false);
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, [isMenuOpen]);
-
-  const menuItems = [
-    { title: "Home", path: "/" },
-    { title: "Statistics", path: "/statistics" },
-    { title: "Investments", path: "/investments" },
-    { title: "Services", path: "/services" },
-    { title: "About Us", path: "/about-us" },
-    { title: "Contact Us", path: "/contact-us" }
-  ];
-
   return (
-    <header id="sticky-header" className={`header-section header-section--style2 ${isSticky ? 'header-fixed' : ''}`}>
-      <div className="header-bottom">
-        <div className="container">
-          <div className="header-wrapper">
+    <header className={`header-area ${isSticky ? 'sticky-header' : ''}`}>
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-lg-3 col-md-6 col-7">
             <Logo />
-            <div className={`menu-area menu--style1 ${isMenuOpen ? 'active' : ''}`}>
-              <ul 
-                id="menu-main-menu" 
-                className="menu menu" 
-                ref={menuRef} 
-                role="navigation" 
-                aria-label="Main navigation"
-              >
-                {menuItems.map((item, index) => (
-                  <li 
-                    key={index} 
-                    className="menu-item menu-item-type-post_type menu-item-object-page nav-item"
-                  >
-                    <Link 
-                      to={item.path} 
-                      className="nav-links" 
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.title}
-                    </Link>
-                  </li>
-                ))}
+          </div>
+          <div className="col-lg-6 col-md-0 d-none d-lg-block">
+            <nav className="main-menu">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
-            </div>
+            </nav>
+          </div>
+          <div className="col-lg-3 col-md-6 col-5 d-flex justify-content-end">
             <div className="header-action">
-              <div className="menu-area">
-                <div className="header-btn">
-                  <Link
-                    to="/signup"
-                    style={{backgroundColor:'#00d094', border: '1px solid #00d094'}}
-                    className="trk-btn trk-btn--border trk-btn--primary"
-                  >
-                    <span>Join Now</span>
-                  </Link>
-                </div>
-                
-                <div
-                  className={`header-bar d-lg-none header-bar--style1 ${isMenuOpen ? 'active' : ''}`}
-                  onClick={toggleMenu}
-                  aria-expanded={isMenuOpen}
-                  aria-label="Toggle navigation menu"
-                  aria-controls="menu-main-menu"
-                  role="button"
-                  tabIndex={0}
-                >
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
+              <ThemeToggle />
+              <a href="#signup" className="btn">Sign Up</a>
+              <button className="menu-toggle d-lg-none" onClick={toggleMenu}>
+                <span className={isMenuOpen ? 'open' : ''}></span>
+              </button>
             </div>
           </div>
         </div>
       </div>
-      
-      <ThemeToggle />
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="mobile-menu-container">
+          <nav className="mobile-menu">
+            <ul>
+              <li><a href="#home" onClick={toggleMenu}>Home</a></li>
+              <li><a href="#about" onClick={toggleMenu}>About</a></li>
+              <li><a href="#features" onClick={toggleMenu}>Features</a></li>
+              <li><a href="#services" onClick={toggleMenu}>Services</a></li>
+              <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
