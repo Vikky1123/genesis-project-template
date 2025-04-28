@@ -18,7 +18,6 @@ export default defineConfig({
     },
     strictPort: true,
     allowedHosts: [
-      '5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev',
       '.replit.dev'
     ]
   }

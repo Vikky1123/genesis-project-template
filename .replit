@@ -17,7 +17,7 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "pkill -f node || true"
+args = "pkill -f vite || true"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
