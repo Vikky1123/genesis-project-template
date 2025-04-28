@@ -16,9 +16,7 @@ export default defineConfig({
     watch: {
       usePolling: true
     },
-    strictPort: false,
-    allowedHosts: [
-      '.replit.dev'
-    ]
+    strictPort: true,
+    allowedHosts: 'all'
   }
 })
