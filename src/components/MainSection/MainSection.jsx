@@ -11,17 +11,30 @@ import 'aos/dist/aos.css';
 
 const MainSection = () => {
   useEffect(() => {
-    // Initialize AOS
+    // Initialize AOS with exact settings from original HTML
     AOS.init({
       duration: 800,
       easing: 'ease-in-out',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 50,
+      delay: 0
     });
+    
+    // Refresh AOS when all images are loaded
+    window.addEventListener('load', () => {
+      AOS.refresh();
+    });
+    
+    return () => {
+      window.removeEventListener('load', () => {
+        AOS.refresh();
+      });
+    };
   }, []);
 
   return (
-    <>
+    <main className="main-area fix">
       <HeroBanner />
       <PartnerSlider />
       <AboutSection />
@@ -29,7 +42,7 @@ const MainSection = () => {
       <ServicesGrid />
       <TransactionFeed />
       <FAQ />
-    </>
+    </main>
   );
 };
 

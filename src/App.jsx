@@ -13,12 +13,13 @@ import TransactionFeed from './components/MainSection/TransactionFeed';
 import FAQ from './components/MainSection/FAQ';
 import ErrorBoundary from './components/ErrorBoundary';
 
-// Import CSS files for proper styling
+// Import CSS files for proper styling (order matters)
 import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/bitrader-fontsd1c0.css';
 import './assets/css/bitrader-cored1c0.css';
 import './assets/css/bitrader-customd1c0.css';
 import './assets/css/aosd1c0.css';
+import './assets/css/additional-styles.css';
 
 const App = () => {
   const { theme } = useTheme();

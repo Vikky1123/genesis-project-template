@@ -59,6 +59,7 @@
 .floating-content__top-right,
 .floating-content__bottom-left {
   position: absolute;
+  z-index: 2;
 }
 
 .floating-content__top-left {
@@ -86,6 +87,145 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.floating-content__item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+.floating-content__item p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.about__thumb {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.about__thumb-inner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about__thumb-image img {
+  width: 100%;
+  border-radius: 10px;
+
+/* Brand/Partner Slider Styles */
+.brand.brand--style1 {
+  padding: 60px 0;
+  background-color: var(--body-bg);
+}
+
+.section__header {
+  margin-bottom: 40px;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.brand__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.brand__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.brand__item img {
+  max-width: 100%;
+  max-height: 70px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.brand__item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+  transition: all 0.5s ease;
+}
+
+.pe-lg-5 {
+  padding-right: 3rem !important;
+}
+
+/* About section specific styles */
+.elementor-element.elementor-element-47b6712 {
+  padding: 80px 0;
+  background-color: var(--body-bg);
+}
+
+.e-con-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.elementor-element.elementor-element-3d03e0f,
+.elementor-element.elementor-element-f496e11 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+
+@media (max-width: 991px) {
+  .elementor-element.elementor-element-3d03e0f,
+  .elementor-element.elementor-element-f496e11 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  .pe-lg-5 {
+    padding-right: 15px !important;
+  }
+}
+
+.elementor-widget-heading .elementor-heading-title {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.elementor-size-default {
+  font-size: inherit;
+}
+
+.elementor-widget-container p.elementor-heading-title {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 /* Animation */
