@@ -52,7 +52,7 @@ const App = () => {
         <Header />
         <main id="main-content" tabIndex="-1">
           <Routes>
-            <Route path="/" element={<HeroBanner />} />
+            <Route path="/" element={<MainSection />} />
             {/* Add more routes as needed */}
           </Routes>
         </main>
