@@ -1,0 +1,105 @@
+
+:root {
+  --primary-color: #1B1D6A;
+  --secondary-color: #068FFF;
+  --third-color: #31ABFF;
+  --fourth-color: #0FE3FB;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Elementor specific fixes */
+.elementor-icon-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elementor-icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.elementor-icon-list-icon {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.elementor-icon-list-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.e-con-boxed {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.e-con-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.e-con-full {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .elementor-element-3d03e0f {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .elementor-element-ee44b74 {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .elementor-widget-image {
+    flex: 1;
+  }
+}
+
+/* Make sure images are responsive */
+.elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for responsive issues */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom additional styles */
+.text-center {
+  text-align: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
