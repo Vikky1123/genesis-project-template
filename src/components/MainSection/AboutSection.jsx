@@ -8,9 +8,9 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <div className="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent">
+    <div className="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
       <div className="e-con-inner">
-        <div className="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child">
+        <div className="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
           <div className="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image">
             <div className="elementor-widget-container">
               <div className="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
