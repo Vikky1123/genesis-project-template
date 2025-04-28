@@ -1,7 +1,7 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from "../../context/ThemeContext.js";
-import './Header.module.css';
+import { useTheme } from '../../context/ThemeContext';
 
 const Logo = () => {
   const { theme } = useTheme();
@@ -9,11 +9,13 @@ const Logo = () => {
 
   return (
     <div className="logo">
-      <Link className="secondary-logo" to="/">
-        <img 
-          src={`/wp-content/uploads/2024/06/${isDark ? 'logo-3.png' : 'logo-dark.png'}`} 
-          style={{ maxHeight: '30px' }} 
-          alt="Bitrader Logo" 
+      <Link to="/" className="main-logo">
+        <img
+          id="main-logo"
+          className={isDark ? "light" : "dark"}
+          src="/assets/img/uploads/2024/06/logo-3.png"
+          style={{ maxHeight: "30px" }}
+          alt="Logo"
         />
       </Link>
     </div>

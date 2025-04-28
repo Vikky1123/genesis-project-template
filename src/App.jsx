@@ -1,46 +1,34 @@
-import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ErrorBoundary from './components/ErrorBoundary.jsx';
-import Header from './components/Header';
-import MainSection from './components/MainSection/MainSection';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import { ThemeProvider } from './context/ThemeContext';
+import HeroBanner from './components/MainSection/HeroBanner';
+import ErrorBoundary from './components/ErrorBoundary';
+import { useTheme } from './context/ThemeContext';
 
 // Import CSS files
+import './assets/css/bootstrap.mind1c0.css';
+import './assets/css/bitrader-fontsd1c0.css';
 import './assets/css/bitrader-cored1c0.css';
 import './assets/css/bitrader-customd1c0.css';
-import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/aosd1c0.css';
 
-function App() {
-  useEffect(() => {
-    // Check if any critical assets failed to load
-    const handleError = (e) => {
-      console.error('Asset failed to load:', e.target.src || e.target.href);
-    };
-
-    window.addEventListener('error', handleError, true);
-    return () => {
-      window.removeEventListener('error', handleError, true);
-    };
-  }, []);
+const App = () => {
+  const { theme } = useTheme();
 
   return (
-    <ThemeProvider>
-      <Router>
-        <ErrorBoundary>
-          <ScrollToTop />
-          <Header />
-          <main id="main-content" tabIndex="-1">
-            <Routes>
-              <Route path="/" element={<MainSection />} />
-              {/* Add more routes as needed */}
-            </Routes>
-          </main>
-        </ErrorBoundary>
-      </Router>
-    </ThemeProvider>
+    <div className={`app-wrapper ${theme}-mode`}>
+      <ErrorBoundary>
+        <ScrollToTop />
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<HeroBanner />} />
+          </Routes>
+        </main>
+      </ErrorBoundary>
+    </div>
   );
-}
+};
 
 export default App;
