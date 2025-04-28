@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useTheme } from './context/ThemeContext';
@@ -9,6 +8,8 @@ import ThemeToggle from './components/Header/ThemeToggle';
 import HeroBanner from './components/MainSection/HeroBanner';
 import MainSection from './components/MainSection/MainSection';
 import ErrorBoundary from './components/ErrorBoundary';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Import CSS files for proper styling
 import './assets/css/bootstrap.mind1c0.css';
@@ -20,24 +21,31 @@ import './assets/css/aosd1c0.css';
 const App = () => {
   const { theme } = useTheme();
   const [appMounted, setAppMounted] = useState(false);
-  
+
   useEffect(() => {
     // Log theme changes
     console.log('Current theme:', theme);
+    // Initialize AOS globally
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      easing: 'ease-in-out'
+    });
   }, [theme]);
 
   useEffect(() => {
     // Set a flag to indicate the app is mounted
     setAppMounted(true);
     console.log("App mounted");
-    
+
     // Preload key images
     const preloadImages = [
       '/assets/img/uploads/2024/06/logo-3.png',
       '/assets/img/uploads/2024/06/logo-dark.png',
       '/assets/img/logo/preloader.png'
     ];
-    
+
     preloadImages.forEach(imgSrc => {
       const img = new Image();
       img.src = imgSrc;

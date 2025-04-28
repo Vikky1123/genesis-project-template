@@ -1,0 +1,153 @@
+
+
+/* Floating Content styles for the Partner section */
+.floating-content {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.floating-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.floating-content__top-left {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+.floating-content__bottom-right {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  z-index: 2;
+  animation: float 3s ease-in-out infinite alternate-reverse;
+}
+
+.floating-content__item {
+  background-color: var(--body-bg);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  min-width: 120px;
+  border: 1px solid rgba(10, 79, 213, 0.1);
+}
+
+.floating-content__item h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.floating-content__item p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Elementor compatibility classes */
+.e-con-boxed {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 15px;
+}
+
+.e-con-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.e-con-full {
+  flex: 1;
+  min-width: 300px;
+}
+
+.e-child {
+  position: relative;
+}
+
+.elementor-widget-container {
+  position: relative;
+}
+
+.elementor-heading-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.elementor-size-default {
+  font-size: inherit;
+}
+
+.pe-lg-5 {
+  padding-right: 3rem;
+}
+
+.elementor-element-2a404d7 .elementor-heading-title {
+  margin-bottom: 20px;
+}
+
+.elementor-element-77c0134 .elementor-heading-title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.trk-btn--border {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
+}
+
+.trk-btn--border:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .e-con-inner {
+    flex-direction: column;
+  }
+  
+  .pe-lg-5 {
+    padding-right: 0;
+  }
+  
+  .floating-content__top-left,
+  .floating-content__bottom-right {
+    position: relative;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right: auto;
+    margin: 15px 0;
+  }
+  
+  .floating-content__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}

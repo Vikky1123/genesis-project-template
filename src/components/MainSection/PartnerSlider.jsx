@@ -1,88 +1,75 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/autoplay';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PartnerSlider = () => {
+  useEffect(() => {
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  }, []);
+
   return (
-    <div className="partner partner--gradient tg-section">
-      <div className="container">
-        <div className="partner__wrapper">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={24}
-            grabCursor={true}
-            loop={true}
-            slidesPerView={2}
-            breakpoints={{
-              576: {
-                slidesPerView: 3,
-              },
-              768: {
-                slidesPerView: 4,
-              },
-              992: {
-                slidesPerView: 5,
-                spaceBetween: 15,
-              },
-              1200: {
-                slidesPerView: 6,
-                spaceBetween: 25,
-              },
-            }}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            speed={2000}
-            className="partner__slider"
-          >
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd01-2.png" alt="Partner 1" /></a>
+    <div className="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent">
+      <div className="e-con-inner">
+        <div className="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child">
+          <div className="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image">
+            <div className="elementor-widget-container">
+              <div className="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
+                <div className="about__thumb-inner">
+                  <div className="about__thumb-image floating-content">
+                    <img 
+                      decoding="async" 
+                      src="/assets/img/uploads/2023/10/about01-2.png" 
+                      alt="Partners network illustration"
+                    />
+
+                    <div className="floating-content__top-left">
+                      <div className="floating-content__item">
+                        <h3>50+</h3>
+                        <p>Global Partners</p>
+                      </div>
+                    </div>
+
+                    <div className="floating-content__bottom-right">
+                      <div className="floating-content__item">
+                        <h3>30+</h3>
+                        <p>Countries Served</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd02-2.png" alt="Partner 2" /></a>
-                </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child">
+          <div className="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <h2 className="elementor-heading-title elementor-size-default">
+                Our <span style={{color: 'var(--secondary-color)'}}>Strategic Partners</span> & Global Network
+              </h2>
+            </div>
+          </div>
+          <div className="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <p className="elementor-heading-title elementor-size-default">
+                We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.
+              </p>
+            </div>
+          </div>
+          <div className="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn">
+            <div className="elementor-widget-container">
+              <div className="myclass1">
+                <a href="/about-us" target="_self" rel="nofollow" className="trk-btn trk-btn--border trk-btn--primary">
+                  View Partners
+                </a>
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd03-2.png" alt="Partner 3" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd04-2.png" alt="Partner 4" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd05-2.png" alt="Partner 5" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd06-2.png" alt="Partner 6" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+            </div>
+          </div>
         </div>
       </div>
     </div>
