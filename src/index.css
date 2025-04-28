@@ -17,6 +17,70 @@
 @import './assets/css/elementor/widget-social-icons.min87cc.css';
 
 :root {
+
+/* Elementor specific fixes */
+.elementor-icon-list-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.elementor-icon-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.elementor-icon-list-icon {
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.elementor-icon-list-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.e-con-boxed {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.e-con-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.e-con-full {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .elementor-element-3d03e0f {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .elementor-element-ee44b74 {
+    flex: 1;
+    padding-right: 2rem;
+  }
+  
+  .elementor-widget-image {
+    flex: 1;
+  }
+}
+
+/* Make sure images are responsive */
+.elementor-widget-image img {
+  max-width: 100%;
+  height: auto;
+}
+
   --primary-color: #1B1D6A;
   --secondary-color: #068FFF;
   --third-color: #31ABFF;

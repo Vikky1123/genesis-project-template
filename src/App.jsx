@@ -1,23 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext'; // Using ThemeProvider from edited code
+import { ThemeProvider } from './context/ThemeContext'; 
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ThemeToggle from './components/Header/ThemeToggle'; // Retaining ThemeToggle
+import ThemeToggle from './components/Header/ThemeToggle'; 
 import MainSection from './components/MainSection/MainSection';
 import ErrorBoundary from './components/ErrorBoundary';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// Import CSS files for proper styling (from original code)
+// CSS imports
 import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/bitrader-fontsd1c0.css';
 import './assets/css/bitrader-cored1c0.css';
 import './assets/css/bitrader-customd1c0.css';
 import './assets/css/aosd1c0.css';
 
-//Import Swiper styles (from edited code)
+// Elementor CSS imports
+import './assets/css/elementor/frontend.min87cc.css';
+import './assets/css/elementor/widget-icon-list.min87cc.css';
+import './assets/css/elementor/widget-heading.min87cc.css';
+import './assets/css/elementor/widget-image.min87cc.css';
+
+//Import Swiper styles 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -30,7 +36,7 @@ const App = () => {
   useEffect(() => {
     console.log('Current theme:', theme);
     AOS.init({
-      duration: 1000, // Using duration from edited code
+      duration: 1000, 
       once: true
     });
   }, [theme]);
@@ -52,14 +58,14 @@ const App = () => {
   }, []);
 
   return (
-    <ThemeProvider> {/* Using ThemeProvider from edited code */}
+    <ThemeProvider> 
       <ErrorBoundary>
         <Preloader />
-        <ThemeToggle /> {/* Retaining ThemeToggle */}
-        <div className={`app-wrapper ${theme}-mode`}> {/* Keeping original className */}
+        <ThemeToggle /> 
+        <div className={`app-wrapper ${theme}-mode`}> 
           <ScrollToTop />
           <Header />
-          <main id="main-content" tabIndex="-1"> {/* Keeping original main element */}
+          <main id="main-content" tabIndex="-1"> 
             <Routes>
               <Route path="/" element={<MainSection />} />
               {/* Add more routes as needed */}
