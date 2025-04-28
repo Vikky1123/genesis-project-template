@@ -4,19 +4,16 @@ import React, { useState, useEffect } from 'react';
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
+  // Show button when page is scrolled
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
-
+  // Scroll to top functionality
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -24,14 +21,20 @@ const ScrollToTop = () => {
     });
   };
 
+  useEffect(() => {
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
+
   return (
-    <button 
-      type="button"
-      className={`scroll-top scroll-to-target ${isVisible ? 'open' : ''}`}
+    <a 
+      href="javascript:void(0)" 
+      className={`scrollToTop scrollToTop--style1 scroll__top scroll-to-target scrollToTop--home1 ${isVisible ? 'active' : ''}`}
       onClick={scrollToTop}
+      style={{ display: isVisible ? 'flex' : 'none' }}
     >
       <i className="fas fa-angle-up"></i>
-    </button>
+    </a>
   );
 };
 

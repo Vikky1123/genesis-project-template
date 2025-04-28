@@ -5,10 +5,11 @@ const Preloader = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Simulate loading completion after a short delay
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1500);
-
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -16,11 +17,10 @@ const Preloader = () => {
 
   return (
     <div className="preloader">
-      <div className="preloader-inner">
-        <div className="preloader-icon">
-          <img src="/assets/img/logo/preloader.png" alt="Preloader" />
-        </div>
-      </div>
+      <img 
+        src="/wp-content/themes/bitrader/assets/img/logo/preloader.png" 
+        alt="Preloader"
+      />
     </div>
   );
 };

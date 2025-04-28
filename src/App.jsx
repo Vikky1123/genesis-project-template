@@ -1,43 +1,36 @@
+
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext'; 
+import { useTheme } from './context/ThemeContext'; 
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ThemeToggle from './components/Header/ThemeToggle'; 
-import MainSection from './components/MainSection/MainSection';
 import ErrorBoundary from './components/ErrorBoundary';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// All CSS is now imported from index.css to avoid duplication
-// JavaScript imports
-import './assets/js/wp-includes/jquery/jquery.minf43b.js';
-import './assets/js/wp-includes/jquery/jquery-migrate.min5589.js';
-import './assets/js/bootstrap.mind1c0.js';
-import './assets/js/fslightboxd1c0.js';
-import './assets/js/isotope.pkgd.mind1c0.js';
-import './assets/js/aosd1c0.js';
-import './assets/js/purecounter_vanillad1c0.js';
-import './assets/js/customd1c0.js';
+// All CSS is imported from index.css to avoid duplication
 
-//Import Swiper styles 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
+const MainSection = () => (
+  <div className="main-content">
+    <h1 className="text-center">Welcome to BitTrader</h1>
+    <p className="text-center">Main content will appear here</p>
+  </div>
+);
 
 const App = () => {
   const { theme } = useTheme();
   const [appMounted, setAppMounted] = useState(false);
 
   useEffect(() => {
-    console.log('Current theme:', theme);
-    AOS.init({
-      duration: 1000, 
-      once: true
-    });
-  }, [theme]);
+    // Initialize AOS animation library
+    if (typeof window !== 'undefined') {
+      AOS.init({
+        duration: 1000, 
+        once: true
+      });
+    }
+  }, []);
 
   useEffect(() => {
     setAppMounted(true);
@@ -56,22 +49,24 @@ const App = () => {
   }, []);
 
   return (
-    <ThemeProvider> 
-      <ErrorBoundary>
+    <ErrorBoundary>
+      <div className={`app-wrapper ${theme}-mode`}> 
         <Preloader />
-        <ThemeToggle /> 
-        <div className={`app-wrapper ${theme}-mode`}> 
-          <ScrollToTop />
-          <Header />
-          <main id="main-content" tabIndex="-1"> 
-            <Routes>
-              <Route path="/" element={<MainSection />} />
-              {/* Add more routes as needed */}
-            </Routes>
-          </main>
+        <div className="lightdark-switch">
+          <span className="switch-btn dark-btn" id="btnSwitch" style={{backgroundColor: "rgb(0, 208, 148)"}}>
+            <img src="/wp-content/themes/bitrader/assets/img/icons/moon.svg" alt="light-dark-switchbtn" className="swtich-icon" />
+          </span>
         </div>
-      </ErrorBoundary>
-    </ThemeProvider>
+        <ScrollToTop />
+        <Header />
+        <main id="main-content" tabIndex="-1"> 
+          <Routes>
+            <Route path="/" element={<MainSection />} />
+            {/* Add more routes as needed */}
+          </Routes>
+        </main>
+      </div>
+    </ErrorBoundary>
   );
 };
 
