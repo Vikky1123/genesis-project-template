@@ -1,42 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useTheme } from './context/ThemeContext';
+import { ThemeProvider } from './context/ThemeContext'; // Using ThemeProvider from edited code
 import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ThemeToggle from './components/Header/ThemeToggle';
-import HeroBanner from './components/MainSection/HeroBanner';
+import ThemeToggle from './components/Header/ThemeToggle'; // Retaining ThemeToggle
 import MainSection from './components/MainSection/MainSection';
 import ErrorBoundary from './components/ErrorBoundary';
-import AOS from 'aos'; // Added AOS import
-import 'aos/dist/aos.css'; // Added AOS CSS import
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// Import CSS files for proper styling
+// Import CSS files for proper styling (from original code)
 import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/bitrader-fontsd1c0.css';
 import './assets/css/bitrader-cored1c0.css';
 import './assets/css/bitrader-customd1c0.css';
 import './assets/css/aosd1c0.css';
 
+//Import Swiper styles (from edited code)
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 const App = () => {
   const { theme } = useTheme();
   const [appMounted, setAppMounted] = useState(false);
 
   useEffect(() => {
-    // Log theme changes
     console.log('Current theme:', theme);
-    AOS.init({ // Initialize AOS after the component mounts
-      duration: 800,
+    AOS.init({
+      duration: 1000, // Using duration from edited code
       once: true
     });
   }, [theme]);
 
   useEffect(() => {
-    // Set a flag to indicate the app is mounted
     setAppMounted(true);
     console.log("App mounted");
 
-    // Preload key images
     const preloadImages = [
       '/assets/img/uploads/2024/06/logo-3.png',
       '/assets/img/uploads/2024/06/logo-dark.png',
@@ -50,20 +52,22 @@ const App = () => {
   }, []);
 
   return (
-    <div className={`app-wrapper ${theme}-mode`}>
+    <ThemeProvider> {/* Using ThemeProvider from edited code */}
       <ErrorBoundary>
         <Preloader />
-        <ThemeToggle />
-        <ScrollToTop />
-        <Header />
-        <main id="main-content" tabIndex="-1">
-          <Routes>
-            <Route path="/" element={<MainSection />} />
-            {/* Add more routes as needed */}
-          </Routes>
-        </main>
+        <ThemeToggle /> {/* Retaining ThemeToggle */}
+        <div className={`app-wrapper ${theme}-mode`}> {/* Keeping original className */}
+          <ScrollToTop />
+          <Header />
+          <main id="main-content" tabIndex="-1"> {/* Keeping original main element */}
+            <Routes>
+              <Route path="/" element={<MainSection />} />
+              {/* Add more routes as needed */}
+            </Routes>
+          </main>
+        </div>
       </ErrorBoundary>
-    </div>
+    </ThemeProvider>
   );
 };
 

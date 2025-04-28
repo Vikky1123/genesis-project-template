@@ -1,33 +1,27 @@
 
-/* Import original CSS files - placing imports first to avoid CSS warnings */
-@import './assets/css/bitrader-cored1c0.css';
-@import './assets/css/bootstrap.mind1c0.css';
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Anek+Telugu:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+/* WordPress CSS Imports */
+@import './assets/css/bitrader-cored1c0.css';
+@import './assets/css/bootstrap.mind1c0.css';
+@import './assets/css/bitrader-customd1c0.css';
+@import './assets/css/bitrader-fontsd1c0.css';
+@import './assets/css/aosd1c0.css';
+@import './assets/css/elementor/frontend.min87cc.css';
+@import './assets/css/elementor/widget-heading.min87cc.css';
+@import './assets/css/elementor/widget-icon-box.min87cc.css';
+@import './assets/css/elementor/widget-icon-list.min87cc.css';
+@import './assets/css/elementor/widget-image.min87cc.css';
+@import './assets/css/elementor/widget-social-icons.min87cc.css';
+
 :root {
-  --brand-color: #00D094;
-  --secondary-color: #0A4FD5;
-  --header-bg-color: #ffffff;
-  --text-color: #0C263A;
-  --body-bg: #ffffff;
-  --black-color: #0C263A;
-  --bg-white: #ffffff;
-
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color: var(--text-color);
-  background-color: var(--body-bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[data-bs-theme='dark'] {
-  --header-bg-color: #121212;
-  --body-bg: #121212;
-  --text-color: #ffffff;
+  --primary-color: #1B1D6A;
+  --secondary-color: #068FFF;
+  --third-color: #31ABFF;
+  --fourth-color: #0FE3FB;
+  --white-color: #ffffff;
   --black-color: #ffffff;
 }
 
@@ -43,4 +37,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Fix for responsive issues */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom additional styles */
+.text-center {
+  text-align: center;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
 }

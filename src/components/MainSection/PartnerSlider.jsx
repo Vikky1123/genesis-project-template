@@ -1,91 +1,82 @@
+
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/autoplay';
-
 const PartnerSlider = () => {
   return (
-    <div className="partner partner--gradient tg-section">
+    <section className="brand-area brand-bg">
       <div className="container">
-        <div className="partner__wrapper">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={24}
-            grabCursor={true}
-            loop={true}
-            slidesPerView={2}
-            breakpoints={{
-              576: {
-                slidesPerView: 3,
-              },
-              768: {
-                slidesPerView: 4,
-              },
-              992: {
-                slidesPerView: 5,
-                spaceBetween: 15,
-              },
-              1200: {
-                slidesPerView: 6,
-                spaceBetween: 25,
-              },
-            }}
-            autoplay={{
-              delay: 1500,
-              disableOnInteraction: false,
-            }}
-            speed={2000}
-            className="partner__slider"
-          >
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd01-2.png" alt="Partner 1" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd02-2.png" alt="Partner 2" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd03-2.png" alt="Partner 3" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd04-2.png" alt="Partner 4" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd05-2.png" alt="Partner 5" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="partner__item">
-                <div className="partner__item-inner">
-                  <a href="#"><img decoding="async" src="/assets/img/uploads/2023/10/barnd06-2.png" alt="Partner 6" /></a>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+        <div className="row justify-content-center">
+          <div className="col-lg-6">
+            <div className="section-title text-center mb-50">
+              <h2 className="title">Trusted by <span>1,000+</span> Companies</h2>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-12">
+            <div className="swiper-container brand-active">
+              <Swiper
+                modules={[Autoplay]}
+                slidesPerView={5}
+                spaceBetween={30}
+                loop={true}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 2,
+                  },
+                  576: {
+                    slidesPerView: 3,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                  },
+                  1200: {
+                    slidesPerView: 5,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd01-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd02-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd03-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd04-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd05-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <div className="brand-item">
+                    <img src="/assets/img/uploads/2023/10/barnd06-2.png" alt="Brand Logo" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

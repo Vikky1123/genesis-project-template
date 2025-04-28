@@ -1,6 +1,7 @@
+
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "@vitejs/plugin-react": "^4.4.1",
     "aos": "^2.3.4",
     "react": "^18.2.0",
@@ -13,6 +14,7 @@
     "dev": "vite",
     "build": "vite build",
     "build:dev": "vite build --mode development",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-assets": "node copy-assets.js"
   }
 }
