@@ -19,6 +19,10 @@ mode = "sequential"
 task = "shell.exec"
 args = "npm install"
 
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx vite --host 0.0.0.0 --port 5000"
+
 [[ports]]
 localPort = 5000
 
