@@ -7,12 +7,12 @@ import PartnerSlider from './PartnerSlider';
 
 const MainSection = () => {
   return (
-    <div className="main-content">
+    <>
       <HeroBanner />
       <AboutSection />
       <FeatureTabs />
       <PartnerSlider />
-    </div>
+    </>
   );
 };
 
