@@ -1,19 +1,24 @@
+
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import ErrorBoundary from './components/ErrorBoundary.jsx';
-import Banner from './components/MainSection/HeroBanner.jsx';
+import Header from './components/Header';
 import MainSection from './components/MainSection/MainSection';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import { ThemeProvider } from './context/ThemeContext';
+import Preloader from './components/Preloader/Preloader';
+
+// Import CSS files
+import './assets/css/bitrader-cored1c0.css';
 
 function App() {
   return (
-    <ErrorBoundary>
-      <Router>
-        <div className="app">
-          <Banner />
-          <MainSection />
-        </div>
-      </Router>
-    </ErrorBoundary>
+    <ThemeProvider>
+      <Preloader />
+      <Header />
+      <ScrollToTop />
+      <main id="main-content" tabIndex="-1">
+        <MainSection />
+      </main>
+    </ThemeProvider>
   );
 }
 
