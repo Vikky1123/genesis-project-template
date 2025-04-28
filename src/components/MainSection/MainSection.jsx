@@ -6,12 +6,12 @@ import AboutSection from './AboutSection';
 
 const MainSection = () => {
   return (
-    <>
+    <main>
       <HeroBanner />
       <PartnerSlider />
       <AboutSection />
       {/* Add other sections here */}
-    </>
+    </main>
   );
 };
 

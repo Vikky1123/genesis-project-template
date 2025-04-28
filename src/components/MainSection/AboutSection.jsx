@@ -8,15 +8,15 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <div className="elementor-element e-flex e-con-boxed e-con">
+    <div className="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent">
       <div className="e-con-inner">
-        <div className="elementor-element e-con-full e-flex e-con">
-          <div className="elementor-element elementor-widget">
+        <div className="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child">
+          <div className="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image">
             <div className="elementor-widget-container">
               <div className="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
                 <div className="about__thumb-inner">
                   <div className="about__thumb-image floating-content">
-                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="About Us" />
+                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="" />
                     
                     <div className="floating-content__top-left">
                       <div className="floating-content__item">
@@ -38,15 +38,28 @@ const AboutSection = () => {
           </div>
         </div>
         
-        <div className="elementor-element e-con-full e-flex e-con">
-          <div className="about__content" data-aos="fade-left" data-aos-duration="800">
-            <h2>Meet<span> Our Company</span> Unless Miss The Opportunity</h2>
-            <p className="mb-0">Hey there! So glad you stopped by to Meet Our Company. Don't miss out on this opportunity to learn about what we do and the amazing team that makes it all happen! Our company is all about creating innovative solutions and providing top-notch services to our clients. From start to finish, we're dedicated to delivering results that exceed expectations.</p>
-            
-            <div className="about_btnc">
-              <a href="#" target="_blank" rel="nofollow" className="trk-btn trk-btn--primary trk-btn--arrow">
-                Explore More    
-              </a>
+        <div className="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child">
+          <div className="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <h2 className="elementor-heading-title elementor-size-default">Our <span style={{ color: 'var(--secondary-color)' }}>Strategic Partners</span> & Global Network</h2>
+            </div>
+          </div>
+          
+          <div className="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading">
+            <div className="elementor-widget-container">
+              <p className="elementor-heading-title elementor-size-default">
+                We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.
+              </p>
+            </div>
+          </div>
+          
+          <div className="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn">
+            <div className="elementor-widget-container">
+              <div className="myclass1">     
+                <a href="about-us/index.html" target="_self" rel="nofollow" className="trk-btn trk-btn--border trk-btn--primary">
+                  View Partners
+                </a>
+              </div>
             </div>
           </div>
         </div>
