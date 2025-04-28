@@ -1,3 +1,4 @@
+
 /* Add your custom styles here */
 
 /* Floating content styles for About Section */
@@ -27,6 +28,7 @@
   border-radius: 10px;
   padding: 15px 25px;
   text-align: center;
+  min-width: 120px;
 }
 
 .floating-content__item h3 {
@@ -34,6 +36,7 @@
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 5px;
+  margin-top: 0;
 }
 
 .floating-content__item p {
@@ -78,10 +81,18 @@
 
 .about__thumb {
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .about__thumb-inner {
   position: relative;
+  max-width: 100%;
+}
+
+.about__thumb-image img {
+  max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 992px) {
@@ -90,15 +101,50 @@
   }
 }
 
+/* Layout for the about section */
+.elementor-element-47b6712 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.elementor-element-47b6712:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(72, 223, 176, 0.1);
+  z-index: -1;
+}
+
+.elementor-element-47b6712:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(72, 223, 176, 0.1);
+  z-index: -1;
+}
+
 .elementor-element-47b6712 .e-con-inner {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .elementor-element-3d03e0f,
 .elementor-element-f496e11 {
   flex: 0 0 100%;
   max-width: 100%;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
@@ -114,8 +160,38 @@
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 20px;
+  color: var(--heading-color, #111111);
+}
+
+.elementor-widget-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: var(--text-color, #555);
 }
 
 .myclass1 {
   margin-top: 25px;
+}
+
+/* Partner logos style */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgba(72, 223, 176, 0.1);
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.partner-logos img {
+  height: 30px;
+  margin: 0 20px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.partner-logos img:hover {
+  opacity: 1;
 }
