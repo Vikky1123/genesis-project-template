@@ -6,19 +6,31 @@ const ThemeContext = createContext();
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {
+  // Get initial theme from localStorage or default to 'light'
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
-    return savedTheme || 'light';
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      return savedTheme || 'light';
+    }
+    return 'light';
   });
 
-  useEffect(() => {
-    localStorage.setItem('theme', theme);
-    document.body.className = theme + '-mode';
-  }, [theme]);
-
+  // Toggle between light and dark themes
   const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('theme', newTheme);
+    }
   };
+
+  // Apply theme class to body when theme changes
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      document.body.classList.remove('light-mode', 'dark-mode');
+      document.body.classList.add(`${theme}-mode`);
+    }
+  }, [theme]);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
