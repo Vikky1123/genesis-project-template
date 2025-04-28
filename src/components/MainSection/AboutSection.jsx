@@ -16,7 +16,7 @@ const AboutSection = () => {
               <div className="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
                 <div className="about__thumb-inner">
                   <div className="about__thumb-image floating-content">
-                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="" />
+                    <img decoding="async" src="/assets/img/uploads/2023/10/about01-2.png" alt="About" />
                     
                     <div className="floating-content__top-left">
                       <div className="floating-content__item">
@@ -56,7 +56,7 @@ const AboutSection = () => {
           <div className="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn">
             <div className="elementor-widget-container">
               <div className="myclass1">     
-                <a href="about-us/index.html" target="_self" rel="nofollow" className="trk-btn trk-btn--border trk-btn--primary">
+                <a href="/about-us" target="_self" rel="nofollow" className="trk-btn trk-btn--border trk-btn--primary">
                   View Partners
                 </a>
               </div>
