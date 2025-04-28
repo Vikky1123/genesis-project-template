@@ -99,9 +99,10 @@ function HeroBanner({
                   />
                 </div>
                 
-                <h1 className="banner__content-heading title">
-                  Driving <span style={{ color: "var(--secondary-color)" }}>Exponential Growth</span> Through Smart Investments
-                </h1>
+                <h1 
+                  className="banner__content-heading title"
+                  dangerouslySetInnerHTML={{ __html: heading }}
+                />
                 
                 <p className="banner__content-moto">
                   {description}
