@@ -103,9 +103,6 @@ const Header = ({ stickyClass = '' }) => {
   );
 };
 
-export default Header;
-import React from 'react';
-
 const Header = ({
   preloaderImgSrc = "wp-content/themes/bitrader/assets/img/logo/preloader.png",
   switchBtnBgColor = "rgb(0, 208, 148)",
