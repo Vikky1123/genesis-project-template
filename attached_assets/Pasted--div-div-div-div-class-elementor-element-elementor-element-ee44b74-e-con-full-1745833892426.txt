@@ -1,0 +1,97 @@
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ee44b74 e-con-full e-flex e-con e-parent" data-id="ee44b74" data-element_type="container">
+				<div class="elementor-element elementor-element-5433ca4 elementor-widget elementor-widget-brand" data-id="5433ca4" data-element_type="widget" data-widget_type="brand.default">
+				<div class="elementor-widget-container">
+					
+
+
+         
+        <script>
+            jQuery(document).ready(function($) {
+
+                // component slider here
+                const Partner = new Swiper('.partner__slider', {
+                    spaceBetween: 24,
+                    grabCursor: true,
+                    loop: true,
+                    slidesPerView: 2,
+                    breakpoints: {
+                        576: {
+                            slidesPerView: 3,
+                        },
+                        768: {
+                            slidesPerView: 4,
+                        },
+                        992: {
+                            slidesPerView: 5,
+                            spaceBetween: 15,
+                        },
+                        1200: {
+                            slidesPerView: 6,
+                            spaceBetween: 25,
+                        },
+                    },
+                    autoplay: {
+                        delay: 1,
+                        disableOnInteraction: true,
+                    },
+                    speed: 2000,
+                });
+
+            });
+        </script>
+
+        <div class="partner partner--gradient tg-section">
+            <div class="container">
+                <div class="partner__wrapper">
+                    <div class="partner__slider swiper">
+                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd01-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd02-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd03-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd04-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd05-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                            <div class="swiper-slide">
+                                    <div class="partner__item">
+                                        <div class="partner__item-inner">
+                                                                                            <a href="#"><img decoding="async" src="./wp-content/uploads/2023/10/barnd06-2.png" alt=""></a>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
