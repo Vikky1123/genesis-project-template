@@ -1,0 +1,59 @@
+/* CSS Compatibility fixes */
+
+/* Line clamp fallbacks */
+[class*="line-clamp"],
+.blog__content p,
+.blog__content h5,
+.sidebar__recentpost-content p a,
+.feature--style2 .feature__item-content h5 {
+  display: -webkit-box;
+  display: block;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Line clamp overrides */
+[data-line-clamp="1"],
+.line-clamp-1,
+.blog__content h5,
+.feature--style2 .feature__item-content h5 {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  max-height: 1.5em;
+}
+
+[data-line-clamp="3"],
+.line-clamp-3,
+.blog__content p,
+.sidebar__recentpost-content p a {
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  max-height: 4.5em;
+}
+
+/* Form element appearances */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  appearance: button;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Backdrop filters */
+.header-section.header-fixed {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+/* Gradient text effects */
+.gradient-text--brand1 {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

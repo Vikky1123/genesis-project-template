@@ -1,0 +1,74 @@
+/* hfe-widgets-style.css */
+.hfe-nav-menu__align-left .hfe-nav-menu {
+    justify-content: flex-start;
+}
+
+.hfe-nav-menu__align-right .hfe-nav-menu {
+    justify-content: flex-end;
+}
+
+.hfe-nav-menu__align-center .hfe-nav-menu {
+    justify-content: center;
+}
+
+.hfe-nav-menu__align-justify .hfe-nav-menu {
+    justify-content: space-between;
+}
+
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.1);
+    z-index: 16;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hfe-nav-menu__layout-horizontal .hfe-nav-menu .menu-item-has-children:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hfe-nav-menu .menu-item {
+    position: relative;
+}
+
+.hfe-nav-menu .menu-item-has-children .sub-menu {
+    transition: all 0.3s ease;
+}
+
+.hfe-nav-menu__theme-icon-yes .hfe-nav-menu__toggle .hfe-nav-menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hfe-active-menu .hfe-active-menu-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.hfe-nav-menu__breakpoint-mobile .hfe-nav-menu__layout-horizontal {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.hfe-nav-menu__breakpoint-mobile .hfe-active-menu + .hfe-nav-menu__layout-horizontal {
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+}

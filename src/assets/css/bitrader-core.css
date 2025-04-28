@@ -1,0 +1,279 @@
+:root {
+  /* Brand Colors */
+  --brand-color: #00D094;
+  --secondary-color: #0A4FD5;
+  --header-bg-color: #ffffff;
+  --text-color: #0C263A;
+  --bg-white: #ffffff;
+  --header-border-color2: rgba(255, 255, 255, 0.1);
+  --wh-color: #ffffff;
+}
+
+/* Dark Theme Variables */
+[data-bs-theme='dark'] {
+  --header-bg-color: #121212;
+  --text-color: #ffffff;
+  --bg-white: #1B2D29;
+  --header-border-color2: rgba(255, 255, 255, 0.1);
+}
+
+/* Container and Layout */
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* Header Layout */
+.header-section {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--header-bg-color);
+  border-bottom: 1px solid var(--header-border-color2);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  min-height: 80px;
+}
+
+.logo {
+  flex: 0 0 auto;
+}
+
+.menu-area {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.header-action {
+  flex: 0 0 auto;
+  margin-left: 2rem;
+}
+
+/* Navigation Menu */
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.nav-links {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links:hover,
+.current-menu-item .nav-links {
+  color: var(--brand-color);
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 991px) {
+  .menu-area {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--header-bg-color);
+    padding: 5rem 2rem 2rem;
+    transition: 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 98;
+  }
+
+  .menu-area.active {
+    right: 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .nav-links {
+    display: block;
+    font-size: 1.25rem;
+    padding: 0.75rem 0;
+  }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+}
+
+/* Theme Toggle Styles */
+.lightdark-switch {
+  position: fixed;
+  right: 60px;
+  top: 130px;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.switch-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  background-color: var(--brand-color);
+}
+
+.switch-btn.dark-btn {
+  background-color: #00D094;
+}
+
+.switch-btn[data-bs-theme='dark'] {
+  background-color: #ffffff;
+}
+
+.switch-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .lightdark-switch {
+    position: fixed;
+    top: auto;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+/* Focus Management */
+.switch-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 208, 148, 0.4);
+}
+
+/* Focus styles */
+.switch-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 208, 148, 0.4);
+}
+
+/* Animation Classes */
+.fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Accessibility */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-color);
+  color: white;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--bg-white);
+}
+
+/* Transition effects */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
