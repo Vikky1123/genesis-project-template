@@ -15,5 +15,8 @@
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "copy-assets": "node copy-assets.js"
+  },
+  "devDependencies": {
+    "glob": "^11.0.2"
   }
 }
