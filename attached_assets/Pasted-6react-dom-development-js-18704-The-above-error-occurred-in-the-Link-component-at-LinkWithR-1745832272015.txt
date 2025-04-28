@@ -1,0 +1,45 @@
+6react-dom.development.js:18704  The above error occurred in the <Link> component:
+
+    at LinkWithRef (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/node_modules/.vite/deps/react-router-dom.js?v=250bf16d:9136:5)
+    at li
+    at ul
+    at div
+    at div
+    at div
+    at div
+    at header
+    at Header (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/src/components/Header/Header.jsx:25:35)
+    at div
+    at App (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/src/App.jsx:28:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ react-dom.development.js:18704
+react-dom.development.js:18704  The above error occurred in the <Link> component:
+
+    at LinkWithRef (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/node_modules/.vite/deps/react-router-dom.js?v=250bf16d:9136:5)
+    at div
+    at div
+    at div
+    at div
+    at div
+    at div
+    at header
+    at Header (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/src/components/Header/Header.jsx:25:35)
+    at div
+    at App (https://5f11bc14-214e-40e4-a022-8f0c43137859-00-kuwidr4yx4hc.riker.replit.dev:5173/src/App.jsx:28:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+logCapturedError @ react-dom.development.js:18704
+react-dom.development.js:26962  Uncaught TypeError: Cannot destructure property 'theme' of 'useTheme(...)' as it is undefined.
+    at ThemeToggle (ThemeToggle.jsx:6:11)
+    at renderWithHooks (react-dom.development.js:15486:18)
+    at mountIndeterminateComponent (react-dom.development.js:20103:13)
+    at beginWork (react-dom.development.js:21626:16)
+    at beginWork$1 (react-dom.development.js:27465:14)
+    at performUnitOfWork (react-dom.development.js:26596:12)
+    at workLoopSync (react-dom.development.js:26505:5)
+    at renderRootSync (react-dom.development.js:26473:7)
+    at recoverFromConcurrentError (react-dom.development.js:25889:20)
+    at performConcurrentWorkOnRoot (react-dom.development.js:25789:22)
