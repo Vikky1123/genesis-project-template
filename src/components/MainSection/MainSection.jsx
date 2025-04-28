@@ -4,21 +4,32 @@ import React from 'react';
 const MainSection = () => {
   return (
     <div className="main-content">
-      <div className="container">
+      <div className="container py-5">
         <h1 className="text-center">Welcome to BitTrader</h1>
-        <p className="text-center">Your cryptocurrency trading platform</p>
-        <div className="row my-5">
-          <div className="col-md-6 offset-md-3">
-            <div className="card p-4 shadow">
-              <h3>Get Started Today</h3>
-              <p>Start trading cryptocurrencies with our easy-to-use platform.</p>
-              <ul className="list-unstyled">
-                <li>✓ Real-time market data</li>
-                <li>✓ Secure transactions</li>
-                <li>✓ Expert trading insights</li>
-                <li>✓ Low trading fees</li>
-              </ul>
-              <button className="btn btn-primary mt-3">Join Now</button>
+        <p className="text-center">Your premier platform for cryptocurrency trading</p>
+        <div className="row mt-5">
+          <div className="col-md-4">
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">Easy Trading</h5>
+                <p className="card-text">Trade cryptocurrencies with an intuitive and user-friendly interface.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">Secure Platform</h5>
+                <p className="card-text">Your security is our priority with advanced encryption technology.</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="card mb-4">
+              <div className="card-body">
+                <h5 className="card-title">24/7 Support</h5>
+                <p className="card-text">Our dedicated team is always available to assist you.</p>
+              </div>
             </div>
           </div>
         </div>
