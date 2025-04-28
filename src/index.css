@@ -22,6 +22,9 @@
 @import './assets/css/wp-includes/header-footer-elementor.css';
 @import './assets/css/wp-includes/style.mind1c0.css';
 
+/* WordPress CSS Variables - Import first to ensure variables are available to all other CSS */
+@import './assets/css/wp-variables.css';
+
 /* WordPress Content */
 @import './assets/css/wp-content/apple-webkit.min87cc.css';
 @import './assets/css/wp-content/brands52d5.css';
