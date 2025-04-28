@@ -1,0 +1,780 @@
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
+				<div class="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image" data-id="8a79fe6" data-element_type="widget" data-widget_type="genix-image.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        
+                            <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about__thumb-inner">
+                        <div class="about__thumb-image floating-content">
+                                                            <img decoding="async" src="./wp-content/uploads/2023/10/about01-2.png" alt="">
+                            
+                                                            <div class="floating-content__top-left">
+                                    <div class="floating-content__item">
+                                        <h3>50+</h3>
+                                        <p>Global Partners</p>
+                                    </div>
+                                </div>
+                            
+                                                            <div class="floating-content__bottom-right">
+                                    <div class="floating-content__item">
+                                        <h3>30+</h3>
+                                        <p>Countries Served</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child" data-id="f496e11" data-element_type="container">
+				<div class="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading" data-id="2a404d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our <span style="color: var(--secondary-color);">Strategic Partners</span> & Global Network</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading" data-id="77c0134" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn" data-id="211649c" data-element_type="widget" data-widget_type="tg-btn.default">
+				<div class="elementor-widget-container">
+					
+        
+                            <div class="myclass1">     
+                    <a href="about-us/index.html" target="_self" rel="nofollow" class="trk-btn trk-btn--border trk-btn--primary">
+                        View Partners                    </a>
+                </div>
+            
+        
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c1c4aaf e-con-full e-flex e-con e-parent" data-id="c1c4aaf" data-element_type="container">
+				<div class="elementor-element elementor-element-94c7ebe elementor-widget elementor-widget-offer-tab" data-id="94c7ebe" data-element_type="widget" data-widget_type="offer-tab.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        <section class="feature feature--style1 padding-bottom padding-top bg-color">
+            <div class="container">
+                <div class="feature__wrapper">
+                    <div class="row g-5 align-items-center justify-content-between">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="feature__content" data-aos="fade-right" data-aos-duration="800">
+                                <div class="feature__content-inner">
+
+                                    <div class="section-header">
+                                                                                    <h2 class="mb-15 mt-minus-5 el-section-title"><span style="color: var(--secondary-color)">Platform </span> Statistics</h2>
+                                        
+                                                                                    <p class="mb-0 el-section-description">Explore our impressive performance metrics that make Bitrader a leading choice for traders worldwide.</p>
+                                                                            </div>
+
+                                    <div class="feature__nav">
+                                        <div class="nav nav--feature flex-column nav-pills" id="feat-pills-tab" role="tablist" aria-orientation="vertical">
+                                                                                            <div class="nav-link active" id="tg-tab-0" data-bs-toggle="pill" data-bs-target="#tg-id-0" role="tab" aria-controls="tg-id-0" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Consistently high success rate across all trading pairs</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-1" data-bs-toggle="pill" data-bs-target="#tg-id-1" role="tab" aria-controls="tg-id-1" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Average daily volume with minimal transaction fees</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-2" data-bs-toggle="pill" data-bs-target="#tg-id-2" role="tab" aria-controls="tg-id-2" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Growing user base with exceptional retention rates</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                            <div class="nav-link " id="tg-tab-3" data-bs-toggle="pill" data-bs-target="#tg-id-3" role="tab" aria-controls="tg-id-3" aria-selected="true">
+                                                    <div class="feature__item">
+                                                        <div class="feature__item-inner">
+                                                            <div class="feature__item-content">
+                                                                <h6>Ultra-fast transaction processing with advanced security</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                                                    </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <div class="feature__thumb pt-5 pt-md-0" data-aos="fade-left" data-aos-duration="800">
+                                <div class="feature__thumb-inner">
+                                    <div class="tab-content" id="feat-pills-tabContent">
+                                                                                    <div class="tab-pane fade show active" id="tg-id-0" role="tabpanel" aria-labelledby="tg-tab-0" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features01.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent01.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Success Rate</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">89%</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Trading Success</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-1" role="tabpanel" aria-labelledby="tg-tab-1" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features02.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent02.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Daily Volume</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">$18M</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Trading Volume</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-2" role="tabpanel" aria-labelledby="tg-tab-2" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features01.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent03.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">User Growth</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">30K+</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Active Users</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                                    <div class="tab-pane fade " id="tg-id-3" role="tabpanel" aria-labelledby="tg-tab-3" tabindex="0">
+                                                <div class="feature__image floating-content">
+
+                                                                                                            <img decoding="async" src="./wp-content/uploads/2023/10/features02.png" alt="Feature image">
+                                                    
+                                                                                                            <div class="floating-content__top-right floating-content__top-right--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style2 text-center">
+                                                                                                                                    <img decoding="async" src="./wp-content/uploads/2023/10/percent04.png" width="80" alt="Feature image">
+                                                                                                                                                                                                    <p class="style2">Transaction Speed</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                    
+                                                                                                            <div class="floating-content__bottom-left floating-content__bottom-left--style2" data-aos="fade-left" data-aos-duration="1000">
+                                                            <div class="floating-content__item floating-content__item--style3  d-flex align-items-center">
+                                                                                                                                    <h3 class="style2">0.02s</h3>
+                                                                                                                                                                                                    <p class="ms-3 style2">Processing Time</p>
+                                                                                                                            </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature__shape">
+
+                                    <span class="feature__shape-item feature__shape-item--1">
+                        <img decoding="async" src="./wp-content/uploads/2023/10/features_shape.png" width="70" alt="shape-icon">
+                    </span>
+                                <span class="feature__shape-item feature__shape-item--2"> <span></span> </span>
+            </div>
+        </section>
+
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-014671b e-flex e-con-boxed e-con e-parent" data-id="014671b" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-f98f54e e-flex e-con-boxed e-con e-child" data-id="f98f54e" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d7c75de elementor-widget elementor-widget-tg-heading" data-id="d7c75de" data-element_type="widget" data-widget_type="tg-heading.default">
+				<div class="elementor-widget-container">
+					
+                    <div class="section-title">
+                        <h2 class="title">Legally <span>Registered</span> & Verified</h2>
+                    </div>
+                    
+
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-cc01eca elementor-widget elementor-widget-heading" data-id="cc01eca" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Your trust is our foundation. Bitrader is a fully registered and compliant investment platform, operating under strict financial regulations to ensure security, transparency, and legitimacy.</p>
+                </div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-94c77b0 elementor-widget elementor-widget-tg-servicesBox" data-id="94c77b0" data-element_type="widget" data-widget_type="tg-servicesBox.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        <div class="row g-4 align-items-center">
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="800">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services01.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="our-services/index.html">Registered Company</a>
+                                    </h5>
+                                                                            <p class="mb-0">Bitrader is officially registered with appropriate financial authorities and complies with all relevant investment regulations</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="900">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services02.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="services/financial-advisory/index.html">Verified Operations</a>
+                                    </h5>
+                                                                            <p class="mb-0">Our operations are regularly audited and monitored to meet strict security and performance standards.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="1000">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services03.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="services/management/index.html">SSL & Platform Security</a>
+                                    </h5>
+                                                                            <p class="mb-0">We use advanced SSL encryption and infrastructure to secure all client data and transactions.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="1100">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services04.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="services/supply-optimization/index.html">Trusted by Thousands</a>
+                                    </h5>
+                                                                            <p class="mb-0">With thousands of active members, our reputation continues to grow based on transparency and results.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="1200">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services05.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="services/hr-consulting/index.html">Legal Compliance</a>
+                                    </h5>
+                                                                            <p class="mb-0">Bitrader abides by international financial regulations and KYC/AML policies to ensure a safe and regulated environment.</p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            
+                
+                    <div class="col-sm-6 col-md-6 col-lg-4">
+                        <div class="service__item service__item--" data-aos="fade-up" data-aos-duration="1300">
+                            <div class="service__item-inner text-center">
+                                                                    <div class="service__thumb mb-30">
+                                        <div class="service__thumb-inner">
+                                            <img decoding="async" src="./wp-content/uploads/2023/10/services06.png" width="48" alt="Icon">
+                                        </div>
+                                    </div>
+                                                                <div class="service__content">
+                                    <h5 class="services-title mb-15">
+                                        <a class="stretched-link" href="services/marketing-consulting/index.html">Third-Party Certifications</a>
+                                    </h5>
+                                                                            <p class="mb-0">We hold certifications from trusted third-party firms for compliance and operational trustworthiness </p>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    </div>
+
+				</div>
+            </div>
+                </div>
+            </div>
+    <div class="elementor-element elementor-element-5482bb2 bg-color e-flex e-con-boxed e-con e-parent" data-id="5482bb2" data-element_type="container">
+                <div class="e-con-inner">
+            <div class="elementor-element elementor-element-a229896 elementor-widget__width-inherit elementor-absolute h-100 elementor-widget elementor-widget-bg-shapes" data-id="a229896" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="bg-shapes.default">
+            <div class="elementor-widget-container">
+                
+    
+        <div class="roadmap--style1">
+            <span class="roadmap__shape-item roadmap__shape-item--1">
+                <span></span>
+            </span>
+        </div>
+
+    
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-8a1b9ae elementor-widget__width-auto elementor-absolute upAndDown_animation elementor-widget elementor-widget-image" data-id="8a1b9ae" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+            <div class="elementor-widget-container">
+                                                        <img decoding="async" width="106" height="106" src="./wp-content/uploads/2023/10/shape01-2.png" class="attachment-full size-full wp-image-238" alt="" />															</div>
+            </div>
+    <div class="elementor-element elementor-element-0caae5d e-flex e-con-boxed e-con e-child" data-id="0caae5d" data-element_type="container">
+                <div class="e-con-inner">
+            <div class="elementor-element elementor-element-6f737e6 elementor-widget elementor-widget-tg-heading" data-id="6f737e6" data-element_type="widget" data-widget_type="tg-heading.default">
+            <div class="elementor-widget-container">
+                
+    <div class="section-title">
+        <h2 class="title">Live User <span>Transactions</span></h2>        </div>
+
+            </div>
+            </div>
+            <div class="elementor-element elementor-element-c258034 elementor-widget elementor-widget-heading" data-id="c258034" data-element_type="widget" data-widget_type="heading.default">
+            <div class="elementor-widget-container">
+                <p class="elementor-heading-title elementor-size-default">See what our community is doing in real-time. Updated constantly with the latest user deposits and withdrawals.</p>				</div>
+            </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-3473502 elementor-widget elementor-widget-genix-roadmap" data-id="3473502" data-element_type="widget" data-widget_type="genix-roadmap.default">
+            <div class="elementor-widget-container">
+                
+    <script>
+        jQuery(document).ready(function($) {
+            AOS.init();
+
+            // Dynamic transaction data generation
+            const firstNames = ["John", "Emma", "Liam", "Olivia", "Noah", "Ava", "Ethan", "Sophia", "Mason", "Isabella", "Lucas", "Mia", "Alexander", "Charlotte", "Benjamin", "Amelia", "Elijah", "Harper", "William", "Evelyn", "James", "Abigail", "Sebastian", "Emily", "Jack", "Elizabeth", "Owen", "Sofia", "Daniel", "Avery", "Jackson", "Ella", "Samuel", "Madison", "Dylan", "Scarlett", "Nathan", "Victoria", "Isaac", "Aria", "Kai", "Grace", "Adrian", "Chloe", "Leo", "Penelope", "Gabriel", "Layla", "Julian", "Riley"];
+
+            const lastNames = ["Smith", "Johnson", "Williams", "Brown", "Jones", "Garcia", "Miller", "Davis", "Rodriguez", "Martinez", "Hernandez", "Lopez", "Gonzalez", "Wilson", "Anderson", "Thomas", "Taylor", "Moore", "Jackson", "Martin", "Lee", "Perez", "Thompson", "White", "Harris", "Sanchez", "Clark", "Ramirez", "Lewis", "Robinson", "Walker", "Young", "Allen", "King", "Wright", "Scott", "Torres", "Nguyen", "Hill", "Flores", "Green", "Adams", "Nelson", "Baker", "Hall", "Rivera", "Campbell", "Mitchell", "Carter", "Roberts"];
+
+            const plans = ["Basic Plan", "Silver Plan", "Gold Plan", "Platinum Plan", "Diamond Plan", "Elite Plan", "VIP Plan", "Pro Plan", "Enterprise Plan", "Trader Plan", "Master Plan", "Premium Plan"];
+
+            function generateRandomName() {
+                const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+                const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+                return `${firstName} ${lastName.charAt(0)}.`;
+            }
+
+            function generateRandomAmount(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function generateTransaction() {
+                const transactionTypes = [
+                    { type: "deposit", weight: 30, min: 450, max: 2500 },
+                    { type: "withdrawal", weight: 25, min: 780, max: 2700 },
+                    { type: "upgrade", weight: 15, plans: plans },
+                    { type: "profit", weight: 20, min: 310, max: 1200 },
+                    { type: "reinvestment", weight: 10, min: 950, max: 3000 }
+                ];
+
+                // Weighted random selection
+                const totalWeight = transactionTypes.reduce((sum, type) => sum + type.weight, 0);
+                let random = Math.random() * totalWeight;
+                let selectedType;
+
+                for (const type of transactionTypes) {
+                    random -= type.weight;
+                    if (random <= 0) {
+                        selectedType = type;
+                        break;
+                    }
+                }
+
+                const name = generateRandomName();
+                let transaction;
+
+                switch (selectedType.type) {
+                    case "upgrade":
+                        transaction = {
+                            name: name,
+                            action: "upgraded to",
+                            plan: selectedType.plans[Math.floor(Math.random() * selectedType.plans.length)],
+                            type: "upgrade"
+                        };
+                        break;
+                    case "profit":
+                        transaction = {
+                            name: name,
+                            action: "earned",
+                            amount: generateRandomAmount(selectedType.min, selectedType.max),
+                            type: "profit"
+                        };
+                        break;
+                    default:
+                        transaction = {
+                            name: name,
+                            action: selectedType.type === "deposit" ? "deposited" : 
+                                   selectedType.type === "withdrawal" ? "withdrew" : "reinvested",
+                            amount: generateRandomAmount(selectedType.min, selectedType.max),
+                            type: selectedType.type
+                        };
+                }
+
+                return transaction;
+            }
+
+            // Function to format transaction message
+            function formatTransaction(transaction) {
+                if (transaction.type === "upgrade") {
+                    return `${transaction.name} ${transaction.action} ${transaction.plan}`;
+                } else if (transaction.type === "profit") {
+                    return `${transaction.name} ${transaction.action} $${transaction.amount} in profit today`;
+                } else {
+                    return `${transaction.name} ${transaction.action} $${transaction.amount}`;
+                }
+            }
+
+            // Function to update transaction feed
+            function updateTransactionFeed() {
+                const feedContainer = $('.roadmap__wrapper .row');
+                
+                // Update the feed
+                feedContainer.find('.roadmap__item').each(function() {
+                    const transaction = generateTransaction();
+                    const message = formatTransaction(transaction);
+                    
+                    $(this).find('h3').text(message);
+                    $(this).find('p').text(`Transaction completed at ${new Date().toLocaleTimeString()}`);
+                    
+                    // Add appropriate class based on transaction type
+                    $(this).removeClass('deposit withdrawal upgrade profit reinvestment')
+                           .addClass(transaction.type);
+                });
+            }
+
+            // Initial update
+            updateTransactionFeed();
+
+            // Update every 5-8 seconds
+            setInterval(updateTransactionFeed, Math.random() * 3000 + 5000);
+        });
+    </script>
+
+    <style>
+        .roadmap__item.deposit { border-left: 3px solid #4CAF50; }
+        .roadmap__item.withdrawal { border-left: 3px solid #f44336; }
+        .roadmap__item.upgrade { border-left: 3px solid #2196F3; }
+        .roadmap__item.profit { border-left: 3px solid #FFC107; }
+        .roadmap__item.reinvestment { border-left: 3px solid #9C27B0; }
+    </style>
+    
+        <div class="roadmap--style1">
+            <div class="roadmap__wrapper">
+                <div class="row gy-4 gy-md-0 gx-5">
+                                                <div class="col-md-6 offset-md-6">
+                            <div class="roadmap__item ms-md-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-md-6 ">
+                            <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-md-6 offset-md-6">
+                            <div class="roadmap__item ms-md-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-md-6 ">
+                            <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-md-6 offset-md-6">
+                            <div class="roadmap__item ms-md-4 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="col-md-6 ">
+                            <div class="roadmap__item roadmap__item--style2 ms-auto me-md-4 aos-init aos-animate" data-aos="fade-right" data-aos-duration="800">
+                                <div class="roadmap__item-inner">
+                                    <div class="roadmap__item-content">
+                                        <div class="roadmap__item-header">
+                                                                                                <h3>Loading transactions...</h3>
+                                                                                        </div>
+                                                                                        <p>Please wait while we fetch the latest updates...</p>
+                                                                                </div>
+                                </div>
+                            </div>
+                        </div>
+                                        </div>
+            </div>
+        </div>
+
+        
+				
+            </div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4305600 e-flex e-con-boxed e-con e-parent" data-id="4305600" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e162490 elementor-widget__width-auto elementor-absolute upAndDown_animation elementor-widget elementor-widget-image" data-id="e162490" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="106" height="106" src="./wp-content/uploads/2023/10/shape01-2.png" class="attachment-full size-full wp-image-238" alt="" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-d9a05dd e-flex e-con-boxed e-con e-child" data-id="d9a05dd" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0c4fc74 elementor-widget elementor-widget-tg-heading" data-id="0c4fc74" data-element_type="widget" data-widget_type="tg-heading.default">
+				<div class="elementor-widget-container">
+					
+        <div class="section-title">
+            <h2 class="title"><span>Frequently</span> Asked Questions</h2>        </div>
+
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-c1eab82 elementor-widget elementor-widget-heading" data-id="c1eab82" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Hey there! Got questions? We've got answers. Check out our FAQ page for all the deets. Still not satisfied? Hit us up.</p>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ddc8ef4 e-con-full e-flex e-con e-child" data-id="ddc8ef4" data-element_type="container">
+		<div class="elementor-element elementor-element-3359668 e-flex e-con-boxed e-con e-child" data-id="3359668" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-16d8d15 elementor-widget elementor-widget-genix-faq" data-id="16d8d15" data-element_type="widget" data-widget_type="genix-faq.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        
+            <div class="accordion accordion--style1" id="faqAccordion1" data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq0">
+                            <button class="accordion__button " type="button" data-bs-toggle="collapse" data-bs-target="#faqBody0" aria-expanded="false" aria-controls="faqBody0">
+                                <span class="accordion__button-content">
+                                    How many active traders are currently using Bitrader?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody0" class="accordion-collapse collapse show" aria-labelledby="faq0" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">We currently serve over 45,000 active traders worldwide, with an average monthly growth rate of 8%. Our platform handles over 100,000 transactions daily across various trading pairs and investment options.</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq1">
+                            <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody1" aria-expanded="false" aria-controls="faqBody1">
+                                <span class="accordion__button-content">
+                                    What is the average return on investment (ROI) for Bitrader users?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody1" class="accordion-collapse collapse " aria-labelledby="faq1" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">Our users experience an average ROI of 12-15% monthly, with top performers achieving up to 25%. However, returns vary based on market conditions, trading strategy, and risk management practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq2">
+                            <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody2" aria-expanded="false" aria-controls="faqBody2">
+                                <span class="accordion__button-content">
+                                    What is Bitrader's total trading volume and market presence?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody2" class="accordion-collapse collapse " aria-labelledby="faq2" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">Bitrader processes over $840M in monthly trading volume across 30+ countries. We maintain a 99.99% uptime and have facilitated more than $1.2B in successful trades over the past year.</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq3">
+                            <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody3" aria-expanded="false" aria-controls="faqBody3">
+                                <span class="accordion__button-content">
+                                    How does Bitrader's success rate compare to industry standards?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody3" class="accordion-collapse collapse " aria-labelledby="faq3" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">Our platform maintains a 92% user satisfaction rate, significantly above the industry average of 76%. Additionally, 85% of our users have been profitable within their first three months of trading.</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq4">
+                            <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody4" aria-expanded="false" aria-controls="faqBody4">
+                                <span class="accordion__button-content">
+                                    What security measures and success rates does Bitrader maintain?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody4" class="accordion-collapse collapse " aria-labelledby="faq4" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">We employ military-grade encryption and have never experienced a security breach. Our platform successfully processes 99.98% of all transactions, with an average execution time of 0.02 seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="accordion__item ">
+                        <div class="accordion__header" id="faq5">
+                            <button class="accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBody5" aria-expanded="false" aria-controls="faqBody5">
+                                <span class="accordion__button-content">
+                                    What is the growth rate of Bitrader's user base and services?
+                                </span>
+                                <span class="accordion__button-plusicon"></span>
+                            </button>
+                        </div>
+                        <div id="faqBody5" class="accordion-collapse collapse " aria-labelledby="faq5" data-bs-parent="#faqAccordion1">
+                            <div class="accordion__body">
+                                <p class="mb-15">We've maintained a consistent 25% year-over-year growth in active users. Our service offerings have expanded by 40% in the last year, now including advanced trading tools, AI-powered analytics, and premium support services.</p>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
