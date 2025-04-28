@@ -8,6 +8,12 @@
   --body-bg: #ffffff;
   --black-color: #0C263A;
   --bg-white: #ffffff;
+  --primary-color: #0d6efd;
+  --secondary-color: #fa9131;
+  --tertiary-color: #f5f8ff;
+  --body-color: #f5f5f5;
+  --border-color: #e5e5e5;
+  --bg-color-12: #f7f9ff;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -30,6 +36,8 @@
 /* Import original CSS files */
 @import './assets/css/bitrader-cored1c0.css';
 @import './assets/css/bootstrap.mind1c0.css';
+@import './assets/css/additional-styles.css';
+@import 'aos/dist/aos.css';
 
 body {
   margin: 0;

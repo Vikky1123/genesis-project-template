@@ -1,14 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroBanner from './HeroBanner';
 import PartnerSlider from './PartnerSlider';
-// Import other section components as needed
+import AboutSection from './AboutSection';
+import FeatureStats from './FeatureStats';
+import ServicesGrid from './ServicesGrid';
+import TransactionFeed from './TransactionFeed';
+import FAQ from './FAQ';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MainSection = () => {
+  useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }, []);
+
   return (
     <>
       <HeroBanner />
       <PartnerSlider />
-      {/* Add other sections here */}
+      <AboutSection />
+      <FeatureStats />
+      <ServicesGrid />
+      <TransactionFeed />
+      <FAQ />
     </>
   );
 };
