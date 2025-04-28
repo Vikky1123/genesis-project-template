@@ -21,6 +21,10 @@ args = "pkill -f node || true"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
+args = "npm cache clean --force"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
 args = "npm run dev"
 
 [[ports]]

@@ -12,9 +12,9 @@ const ThemeToggle = () => {
       aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
     >
       {isDarkMode ? (
-        <img src="/wp-content/themes/bitrader/assets/img/icons/sun.svg" alt="Light mode" width="20" height="20" />
+        <img src="/assets/img/icons/sun.svg" alt="Light mode" width="20" height="20" />
       ) : (
-        <img src="/wp-content/themes/bitrader/assets/img/icons/moon.svg" alt="Dark mode" width="20" height="20" />
+        <img src="/assets/img/icons/moon.svg" alt="Dark mode" width="20" height="20" />
       )}
     </button>
   );
