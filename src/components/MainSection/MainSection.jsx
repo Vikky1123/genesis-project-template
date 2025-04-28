@@ -6,6 +6,7 @@ import FeatureTabs from './FeatureTabs';
 import PartnerSlider from './PartnerSlider';
 
 const MainSection = () => {
+  // You can pass custom props to HeroBanner here
   return (
     <>
       <HeroBanner />
