@@ -7,7 +7,7 @@ import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+// All CSS is imported globally from index.css
 
 // All CSS is imported from index.css to avoid duplication
 
