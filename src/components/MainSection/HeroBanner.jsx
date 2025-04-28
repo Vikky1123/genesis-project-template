@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import '.HeroBanner.css';
+import './HeroBanner.css';
 
 function HeroBanner({
   heading = "Driving <span>Exponential Growth</span> Through Smart Investments",
