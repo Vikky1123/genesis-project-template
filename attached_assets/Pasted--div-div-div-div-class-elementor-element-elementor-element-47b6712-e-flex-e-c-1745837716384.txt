@@ -1,0 +1,63 @@
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
+				<div class="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image" data-id="8a79fe6" data-element_type="widget" data-widget_type="genix-image.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        
+                            <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about__thumb-inner">
+                        <div class="about__thumb-image floating-content">
+                                                            <img decoding="async" src="./wp-content/uploads/2023/10/about01-2.png" alt="">
+                            
+                                                            <div class="floating-content__top-left">
+                                    <div class="floating-content__item">
+                                        <h3>50+</h3>
+                                        <p>Global Partners</p>
+                                    </div>
+                                </div>
+                            
+                                                            <div class="floating-content__bottom-right">
+                                    <div class="floating-content__item">
+                                        <h3>30+</h3>
+                                        <p>Countries Served</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
+        
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f496e11 e-con-full e-flex e-con e-child" data-id="f496e11" data-element_type="container">
+				<div class="elementor-element elementor-element-2a404d7 elementor-widget elementor-widget-heading" data-id="2a404d7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Our <span style="color: var(--secondary-color);">Strategic Partners</span> & Global Network</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-77c0134 elementor-widget elementor-widget-heading" data-id="77c0134" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">We've built strong partnerships with leading financial institutions, technology providers, and industry innovators worldwide. These strategic alliances enable us to offer enhanced trading capabilities, robust security measures, and seamless integration of cutting-edge financial services. Together with our partners, we're creating a more connected and efficient trading ecosystem.</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-211649c elementor-widget elementor-widget-tg-btn" data-id="211649c" data-element_type="widget" data-widget_type="tg-btn.default">
+				<div class="elementor-widget-container">
+					
+        
+                            <div class="myclass1">     
+                    <a href="about-us/index.html" target="_self" rel="nofollow" class="trk-btn trk-btn--border trk-btn--primary">
+                        View Partners                    </a>
+                </div>
+            

@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroBanner from './HeroBanner';
 import PartnerSlider from './PartnerSlider';
+import AboutSection from './AboutSection';
 // Import other section components as needed
 
 const MainSection = () => {
@@ -8,6 +9,7 @@ const MainSection = () => {
     <>
       <HeroBanner />
       <PartnerSlider />
+      <AboutSection />
       {/* Add other sections here */}
     </>
   );
