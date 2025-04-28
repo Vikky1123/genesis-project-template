@@ -6,7 +6,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
-    "swiper": "^10.0.0",
+    "swiper": "^10.3.1",
     "vite": "^6.3.3"
   },
   "scripts": {
