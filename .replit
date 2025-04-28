@@ -25,6 +25,7 @@ args = "npx vite --host 0.0.0.0 --port 5000"
 
 [[ports]]
 localPort = 5000
+externalPort = 80
 
 [[ports]]
 localPort = 5001
