@@ -1,23 +1,24 @@
 
-import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({
+  switchBtnBgColor = "rgb(0, 208, 148)",
+  switchBtnImgSrc = "wp-content/themes/bitrader/assets/img/icons/moon.svg"
+}) => {
   const { theme, toggleTheme } = useTheme();
-  const isDark = theme === 'dark';
 
   return (
     <div className="lightdark-switch">
       <span 
         className="switch-btn dark-btn" 
         id="btnSwitch" 
-        style={{ backgroundColor: '#00d094' }}
+        style={{ backgroundColor: switchBtnBgColor }}
         onClick={toggleTheme}
       >
         <img 
-          src="/wp-content/themes/bitrader/assets/img/icons/moon.svg" 
+          src={switchBtnImgSrc} 
           alt="light-dark-switchbtn" 
-          className="swtich-icon"
+          className="swtich-icon" 
         />
       </span>
     </div>
