@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useTheme } from "../../context/ThemeContext.js";
+import { useTheme } from "../../context/ThemeContext";
 import './Header.module.css';
 
 const Logo = () => {
