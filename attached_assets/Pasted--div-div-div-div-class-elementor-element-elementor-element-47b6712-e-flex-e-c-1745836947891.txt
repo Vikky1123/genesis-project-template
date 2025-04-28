@@ -1,0 +1,41 @@
+</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-47b6712 e-flex e-con-boxed e-con e-parent" data-id="47b6712" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3d03e0f e-con-full e-flex e-con e-child" data-id="3d03e0f" data-element_type="container">
+				<div class="elementor-element elementor-element-8a79fe6 elementor-widget elementor-widget-genix-image" data-id="8a79fe6" data-element_type="widget" data-widget_type="genix-image.default">
+				<div class="elementor-widget-container">
+					
+        <script>
+            jQuery(document).ready(function($) {
+
+                AOS.init();
+
+            });
+        </script>
+
+        
+                            <div class="about__thumb pe-lg-5" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about__thumb-inner">
+                        <div class="about__thumb-image floating-content">
+                                                            <img decoding="async" src="./wp-content/uploads/2023/10/about01-2.png" alt="">
+                            
+                                                            <div class="floating-content__top-left">
+                                    <div class="floating-content__item">
+                                        <h3>50+</h3>
+                                        <p>Global Partners</p>
+                                    </div>
+                                </div>
+                            
+                                                            <div class="floating-content__bottom-right">
+                                    <div class="floating-content__item">
+                                        <h3>30+</h3>
+                                        <p>Countries Served</p>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            
