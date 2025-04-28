@@ -1,0 +1,68 @@
+
+/* Essential Addons for Elementor General Styles */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.eael-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.eael-grid-item {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.eael-entry-overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.eael-entry-title {
+  margin: 10px 0 5px;
+  font-size: 20px;
+}
+
+.eael-entry-thumbnail {
+  position: relative;
+}
+
+.eael-entry-thumbnail img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.eael-post-elements-readmore-btn {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 10px 15px;
+  margin: 15px 0;
+  border-radius: 3px;
+  color: var(--brand-color);
+  background-color: transparent;
+  border: 1px solid var(--brand-color);
+  font-weight: 500;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.eael-post-elements-readmore-btn:hover {
+  background-color: var(--brand-color);
+  color: #fff;
+}

@@ -1,0 +1,39 @@
+
+/* Elementor post-67 specific styles */
+
+.elementor-67 .elementor-element.elementor-element-2f0447a {
+  --padding-top: 120px;
+  --padding-right: 0px;
+  --padding-bottom: 120px;
+  --padding-left: 0px;
+  background-color: var(--brand-color);
+}
+
+.elementor-67 .elementor-element.elementor-element-2f0447a > .elementor-background-overlay {
+  background-image: url("../../../assets/images/uploads/2023/10/banner_bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.15;
+}
+
+.elementor-67 .elementor-element.elementor-element-31d8b56 {
+  text-align: center;
+}
+
+.elementor-67 .elementor-element.elementor-element-31d8b56 .elementor-heading-title {
+  color: #FFFFFF;
+  font-family: "Anek Telugu", Sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+.elementor-67 .elementor-element.elementor-element-5dd0f59 {
+  color: #FFFFFF;
+  font-family: "Open Sans", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  width: 500px;
+  max-width: 500px;
+}

@@ -1,0 +1,52 @@
+
+/* Elementor Icons styles from wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min705c.css */
+
+@font-face {
+  font-family: eicons;
+  src: url(../fonts/eicons.eot?5.34.0);
+  src: url(../fonts/eicons.eot?5.34.0#iefix) format("embedded-opentype"),
+       url(../fonts/eicons.woff2?5.34.0) format("woff2"),
+       url(../fonts/eicons.woff?5.34.0) format("woff"),
+       url(../fonts/eicons.ttf?5.34.0) format("truetype"),
+       url(../fonts/eicons.svg?5.34.0#eicon) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+[class*=" eicon-"],
+[class^=eicon] {
+  display: inline-block;
+  font-family: eicons;
+  font-size: inherit;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.eicon-menu-bar:before {
+  content: '\e816';
+}
+
+.eicon-close:before {
+  content: '\e87f';
+}
+
+.eicon-arrow-up:before {
+  content: '\e80a';
+}
+
+.eicon-arrow-right:before {
+  content: '\e809';
+}
+
+.eicon-arrow-down:before {
+  content: '\e808';
+}
+
+.eicon-arrow-left:before {
+  content: '\e807';
+}

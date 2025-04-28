@@ -1,0 +1,58 @@
+
+/* Header Footer Elementor Styles */
+
+.ehf-template-header,
+.ehf-template-footer {
+  position: relative;
+  z-index: 10;
+}
+
+.ehf-template-header {
+  margin-bottom: 0;
+}
+
+.ehf-template-footer {
+  margin-top: 0;
+}
+
+.ehf-header .elementor-section,
+.ehf-footer .elementor-section {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.ehf-header .elementor-section.elementor-section-boxed>.elementor-container {
+  max-width: 100%;
+}
+
+.ehf-header .elementor-section-content-middle>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: center;
+}
+
+.ehf-footer .elementor-section-content-middle>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: center;
+}
+
+.ehf-header .elementor-section-content-top>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: flex-start;
+}
+
+.ehf-footer .elementor-section-content-top>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: flex-start;
+}
+
+.ehf-header .elementor-section-content-bottom>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: flex-end;
+}
+
+.ehf-footer .elementor-section-content-bottom>.elementor-container>.elementor-column>.elementor-widget-wrap {
+  align-items: flex-end;
+}
+
+.ehf-header .elementor-section-stretched>.elementor-container {
+  width: 100%;
+}
+
+.ehf-footer .elementor-section-stretched>.elementor-container {
+  width: 100%;
+}
