@@ -67,5 +67,4 @@
 @import './assets/css/custom.min862f.css';
 @import './assets/css/libs.min.css';
 
-/* Root Variables and Common Styles */
-@import './assets/css/root-variables.css';
+/* Custom Variables and Common Styles are already included in other CSS files */
