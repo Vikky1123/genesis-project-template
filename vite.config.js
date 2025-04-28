@@ -16,6 +16,13 @@ export default defineConfig({
     watch: {
       usePolling: true,
       interval: 1000,
-    }
+    },
+    // Add allowedHosts configuration to fix the blocked request error
+    fs: {
+      strict: false
+    },
+    cors: true,
+    // Allow all hosts, including your Replit domain
+    allowedHosts: 'all'
   }
 })
