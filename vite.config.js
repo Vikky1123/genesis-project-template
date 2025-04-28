@@ -9,9 +9,9 @@ export default defineConfig({
     port: 5000,
     hmr: {
       host: '0.0.0.0',
-      port: 5000,
       clientPort: 443,
-      protocol: 'wss'
+      protocol: 'wss',
+      timeout: 120000
     },
     headers: {
       'Access-Control-Allow-Origin': '*'
