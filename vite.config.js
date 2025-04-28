@@ -9,9 +9,10 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5000,
+    https: true,
     hmr: {
       host: '0.0.0.0',
-      protocol: 'ws'
+      protocol: 'wss'
     },
     allowedHosts: [
       'ce099ecb-fbba-4e62-9e61-877a6e0746ca-00-13e3p44nzja05.spock.replit.dev',
