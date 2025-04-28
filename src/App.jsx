@@ -6,17 +6,9 @@ import Header from './components/Header/Header';
 import Preloader from './components/Preloader/Preloader';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import ErrorBoundary from './components/ErrorBoundary';
+import MainSection from './components/MainSection/MainSection';
 import AOS from 'aos';
 // All CSS is imported globally from index.css
-
-// All CSS is imported from index.css to avoid duplication
-
-const MainSection = () => (
-  <div className="main-content">
-    <h1 className="text-center">Welcome to BitTrader</h1>
-    <p className="text-center">Main content will appear here</p>
-  </div>
-);
 
 const App = () => {
   const { theme } = useTheme();
