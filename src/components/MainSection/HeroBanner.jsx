@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import './HeroBanner.css';
 
-function HeroBanner({
+const HeroBanner = ({
   heading = "Driving <span>Exponential Growth</span> Through Smart Investments",
   description = "Our proven track record of success and commitment to excellence has established us as the leading platform for investors seeking consistent returns and financial growth.",
   signupLink = "Signup-Signin/index.html",
@@ -27,12 +27,11 @@ function HeroBanner({
     { icon: "svg", svgType: "linkedin-in", url: "#" },
     { icon: "svg", svgType: "youtube", url: "#" }
   ]
-}) {
+}) => {
   useEffect(() => {
     AOS.init();
   }, []);
 
-  // Helper function to render the correct social icon
   const renderSocialIcon = (icon, svgType) => {
     if (icon === "svg") {
       switch (svgType) {
@@ -81,7 +80,7 @@ function HeroBanner({
           <span className="bg-color d-lg-none"></span>
         </div>
       </div>
-      
+
       <div className="container">
         <div className="banner__wrapper">
           <div className="row gy-5 gx-4">
@@ -98,16 +97,16 @@ function HeroBanner({
                     alt="Coin icon" 
                   />
                 </div>
-                
+
                 <h1 
                   className="banner__content-heading title"
                   dangerouslySetInnerHTML={{ __html: heading }}
                 />
-                
+
                 <p className="banner__content-moto">
                   {description}
                 </p>
-                
+
                 <div className="banner__btn-group btn-group">
                   <a 
                     href={signupLink} 
@@ -117,7 +116,7 @@ function HeroBanner({
                   >
                     {signupButtonText} <span><i className="fas fa-arrow-right"></i></span>
                   </a>
-                  
+
                   <a 
                     href={videoLink}
                     className="trk-btn trk-btn--outline22 btngsc" 
@@ -143,7 +142,7 @@ function HeroBanner({
                     </span> {watchButtonText}
                   </a>
                 </div>
-                
+
                 <div className="banner__content-stats">
                   {stats.map((stat, index) => (
                     <div key={index} className="stat-box">
@@ -152,7 +151,7 @@ function HeroBanner({
                     </div>
                   ))}
                 </div>
-                
+
                 <div className="banner__content-social">
                   <p>Follow Us</p>
                   <ul className="social">
@@ -177,7 +176,7 @@ function HeroBanner({
                 <img 
                   decoding="async" 
                   src={bannerImage}
-                  alt="" 
+                  alt="Banner illustration" 
                 />
               </div>
             </div>
@@ -197,6 +196,6 @@ function HeroBanner({
       </div>
     </section>
   );
-}
+};
 
 export default HeroBanner;
