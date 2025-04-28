@@ -1,29 +1,33 @@
-
 import React, { createContext, useState, useEffect } from 'react';
 
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  // Check local storage or system preference for initial theme
-  const getInitialTheme = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      return savedTheme === 'dark';
-    }
-    // If no saved preference, check system preference
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  };
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
-  const [isDarkMode, setIsDarkMode] = useState(getInitialTheme());
-
-  // Apply theme to document element
   useEffect(() => {
-    document.documentElement.setAttribute('data-bs-theme', isDarkMode ? 'dark' : 'light');
-    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-  }, [isDarkMode]);
+    // Check for saved theme preference or user's system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+      setIsDarkMode(true);
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+    } else {
+      setIsDarkMode(false);
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+    }
+  }, []);
 
   const toggleTheme = () => {
-    setIsDarkMode(prevMode => !prevMode);
+    setIsDarkMode(!isDarkMode);
+    if (!isDarkMode) {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+      localStorage.setItem('theme', 'light');
+    }
   };
 
   return (

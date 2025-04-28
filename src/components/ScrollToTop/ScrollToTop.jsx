@@ -1,25 +1,7 @@
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import '../../assets/css/bitrader-cored1c0.css';
 
 const ScrollToTop = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  // Show button when page is scrolled down
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Set up scroll event listener
-  useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
-  }, []);
-
-  // Scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -30,10 +12,9 @@ const ScrollToTop = () => {
   return (
     <a 
       href="javascript:void(0)" 
+      className="scrollToTop scrollToTop--style1 scroll__top scroll-to-target scrollToTop--home1" 
       onClick={scrollToTop}
-      className={`scrollToTop scrollToTop--style1 scroll__top scroll-to-target scrollToTop--home1 ${isVisible ? 'active' : ''}`}
-      data-target="html"
-      style={{ display: isVisible ? 'inline-flex' : 'none' }}
+      aria-label="Scroll to top"
     >
       <i className="fas fa-angle-up"></i>
     </a>

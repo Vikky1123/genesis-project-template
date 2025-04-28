@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../context/ThemeContext';
+import '../../assets/css/bitrader-cored1c0.css';
 
 const Logo = () => {
   const { isDarkMode } = useContext(ThemeContext);
@@ -10,11 +11,8 @@ const Logo = () => {
     <div className="logo">
       <Link className="main-logo" to="/">
         <img 
-          id="main-logo" 
-          className={isDarkMode ? "light" : "dark"} 
-          src="/wp-content/uploads/2024/06/logo-3.png" 
-          style={{ maxHeight: '30px' }} 
-          alt="Logo" 
+          src={`/assets/img/uploads/2023/10/${isDarkMode ? 'logo-dark-2' : 'logo-dark-2'}.png`} 
+          alt="Bitrader Logo" 
         />
       </Link>
     </div>

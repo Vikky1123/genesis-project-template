@@ -1,23 +1,13 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import '../../assets/css/bitrader-cored1c0.css';
 
 const Preloader = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Hide preloader after page loads
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  return loading ? (
+  return (
     <div className="preloader">
-      <img src="/assets/img/logo/preloader.png" alt="Preloader" />
+      <img src="/assets/img/uploads/2023/10/favicon-2.png" alt="Preloader" />
     </div>
-  ) : null;
+  );
 };
 
 export default Preloader;
