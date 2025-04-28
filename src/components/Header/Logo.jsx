@@ -5,6 +5,11 @@ import { useTheme } from '../../context/ThemeContext';
 
 const Logo = () => {
   const { theme } = useTheme();
+  
+  // Choose the logo based on theme
+  const logoSrc = theme === 'dark' 
+    ? "/assets/img/uploads/2024/06/logo-3.png" 
+    : "/assets/img/uploads/2024/06/logo-dark.png";
 
   return (
     <div className="logo">
@@ -12,7 +17,7 @@ const Logo = () => {
         <img 
           id="main-logo" 
           className={theme}
-          src="/wp-content/uploads/2024/06/logo-3.png" 
+          src={logoSrc}
           style={{ maxHeight: '30px' }} 
           alt="Logo" 
         />

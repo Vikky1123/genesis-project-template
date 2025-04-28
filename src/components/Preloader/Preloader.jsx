@@ -1,10 +1,25 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Preloader = () => {
+  const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    // Simulate loading and hide preloader after 1.5 seconds
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+    
+    return () => clearTimeout(timer);
+  }, []);
+  
+  if (!loading) {
+    return null;
+  }
+  
   return (
     <div className="preloader">
-      <img src="/wp-content/themes/bitrader/assets/img/logo/preloader.png" alt="Preloader" />
+      <img src="/assets/img/logo/preloader.png" alt="Preloader" />
     </div>
   );
 };

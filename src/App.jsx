@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { useTheme } from './context/ThemeContext';
 import Header from './components/Header/Header';
@@ -18,11 +18,30 @@ import './assets/css/aosd1c0.css';
 
 const App = () => {
   const { theme } = useTheme();
+  const [appMounted, setAppMounted] = useState(false);
   
   useEffect(() => {
     // Log theme changes
     console.log('Current theme:', theme);
   }, [theme]);
+
+  useEffect(() => {
+    // Set a flag to indicate the app is mounted
+    setAppMounted(true);
+    console.log("App mounted");
+    
+    // Preload key images
+    const preloadImages = [
+      '/assets/img/uploads/2024/06/logo-3.png',
+      '/assets/img/uploads/2024/06/logo-dark.png',
+      '/assets/img/logo/preloader.png'
+    ];
+    
+    preloadImages.forEach(imgSrc => {
+      const img = new Image();
+      img.src = imgSrc;
+    });
+  }, []);
 
   return (
     <div className={`app-wrapper ${theme}-mode`}>
