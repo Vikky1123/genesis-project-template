@@ -1,69 +1,41 @@
-import React, { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { useTheme } from './context/ThemeContext';
-import Header from './components/Header/Header';
-import Preloader from './components/Preloader/Preloader';
-import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import ThemeToggle from './components/Header/ThemeToggle';
-import MainSection from './components/MainSection/MainSection'; // Import MainSection
-import AboutSection from './components/MainSection/AboutSection';
-import FeatureStats from './components/MainSection/FeatureStats';
-import ServicesGrid from './components/MainSection/ServicesGrid';
-import TransactionFeed from './components/MainSection/TransactionFeed';
-import FAQ from './components/MainSection/FAQ';
-import ErrorBoundary from './components/ErrorBoundary';
-
-// Import CSS files for proper styling (order matters)
-import './assets/css/bootstrap.mind1c0.css';
-import './assets/css/bitrader-fontsd1c0.css';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './assets/css/bitrader-cored1c0.css';
-import './assets/css/bitrader-customd1c0.css';
-import './assets/css/aosd1c0.css';
+import './assets/css/bootstrap.mind1c0.css';
 import './assets/css/additional-styles.css';
+import './assets/css/bitrader-customd1c0.css';
+import 'aos/dist/aos.css';
+import Header from './components/Header/Header';
+import MainSection from './components/MainSection/MainSection';
+import { ThemeProvider } from './context/ThemeContext';
+import ErrorBoundary from './components/ErrorBoundary';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
-const App = () => {
+// Import Bootstrap JS
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
+function App() {
   const { theme } = useTheme();
-  const [appMounted, setAppMounted] = useState(false);
 
   useEffect(() => {
-    // Log theme changes
-    console.log('Current theme:', theme);
+    // Add body class
+    document.body.classList.add('home-1');
+    console.log('Current theme:', theme); //Theme logging retained from original
   }, [theme]);
 
-  useEffect(() => {
-    // Set a flag to indicate the app is mounted
-    setAppMounted(true);
-    console.log("App mounted");
-
-    // Preload key images
-    const preloadImages = [
-      '/assets/img/uploads/2024/06/logo-3.png',
-      '/assets/img/uploads/2024/06/logo-dark.png',
-      '/assets/img/logo/preloader.png'
-    ];
-
-    preloadImages.forEach(imgSrc => {
-      const img = new Image();
-      img.src = imgSrc;
-    });
-  }, []);
-
   return (
-    <div className={`app-wrapper ${theme}-mode`}>
-      <ErrorBoundary>
-        <Preloader />
-        <ThemeToggle />
-        <ScrollToTop />
-        <Header />
-        <main id="main-content" tabIndex="-1">
-          <Routes>
-            <Route path="/" element={<MainSection />} />
-            {/* Add more routes as needed */}
-          </Routes>
-        </main>
-      </ErrorBoundary>
-    </div>
+    <ThemeProvider>
+      <Router>
+        <ErrorBoundary>
+          <div className="main-wrap">
+            <Header />
+            <MainSection />
+            <ScrollToTop />
+          </div>
+        </ErrorBoundary>
+      </Router>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;
