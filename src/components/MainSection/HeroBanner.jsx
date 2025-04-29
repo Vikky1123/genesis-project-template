@@ -1,7 +1,6 @@
 
 import React, { useEffect } from 'react';
 import AOS from 'aos';
-import './HeroBanner.css';
 
 const HeroBanner = () => {
   useEffect(() => {
